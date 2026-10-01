@@ -1,0 +1,15 @@
+﻿ANIO,MES,DIA,MM,TOTAL_MES_MM,NO_EVENTOS,OBSERVACION
+2024.0,Diciembre,16.0,12.0,31.0,2.0,
+2025.0,Enero,24.0,4.0,13.0,2.0,
+2025.0,Febrero,0.0,0.0,0.0,0.0,
+2025.0,Marzo,6.0,2.0,79.0,5.0,
+2025.0,Abril,2.0,16.0,189.0,8.0,
+2025.0,Mayo,1.0,25.0,513.0,13.0,
+2025.0,Junio,3.0,11.0,147.0,8.0,
+2025.0,Julio,2.0,7.0,36.0,3.0,
+2025.0,agosto,25.0,46.0,111.0,3.0,
+2025.0,septiembre,2.0,50.0,75.0,2.0,
+2025.0,octubre,17.0,18.0,40.0,2.0,
+2025.0,noviembre,0.0,0.0,0.0,0.0,
+2025.0,diciembre,6.0,27.0,1.0,27.0,Revisar TOTAL_MES_MM y NO_EVENTOS en la fuente
+2026.0,enero,3.0,38.0,1.0,38.0,Revisar TOTAL_MES_MM y NO_EVENTOS en la fuente

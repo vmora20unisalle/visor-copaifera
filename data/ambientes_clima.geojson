@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "ambientes_clima",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Dataloger": "Abierto", "Latitud": 5.143417, "Longitud": -72.044667 }, "geometry": { "type": "Point", "coordinates": [ -72.044667, 5.143417 ] } },
+{ "type": "Feature", "properties": { "Dataloger": "Arbol", "Latitud": 5.140467, "Longitud": -72.044733 }, "geometry": { "type": "Point", "coordinates": [ -72.044733, 5.140467 ] } },
+{ "type": "Feature", "properties": { "Dataloger": "Bosquete", "Latitud": 5.147033, "Longitud": -72.0474 }, "geometry": { "type": "Point", "coordinates": [ -72.0474, 5.147033 ] } },
+{ "type": "Feature", "properties": { "Dataloger": "Bosque", "Latitud": 5.142183, "Longitud": -72.05095 }, "geometry": { "type": "Point", "coordinates": [ -72.05095, 5.142183 ] } }
+]
+}

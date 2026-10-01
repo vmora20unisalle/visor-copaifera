@@ -1,0 +1,316 @@
+﻿FECHA,MUESTREO,AMBIENTE,ID_ARBOL,REF_CLIMA,ACEITE_ML,RESINA_ML,TIPO_PRODUCCION
+2025-02-05,1.0,Bosque,VC-IMP-31,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMP-32,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMP-33,Bosque,0.0,260.0,Resina
+2025-02-05,1.0,Bosque,VC-IMP-34,Bosque,0.0,140.0,Resina
+2025-02-05,1.0,Bosque,VC-IMP-35,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMP-36,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMP-37,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMP-38,Bosque,0.0,30.0,Resina
+2025-02-05,1.0,Bosque,VC-IMP-39,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMP-40,Bosque,0.0,50.0,Resina
+2025-02-05,1.0,Bosque,VC-IMP-41,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMP-42,Bosque,0.0,15.0,Resina
+2025-02-05,1.0,Bosque,VC-IMP-43,Bosque,0.0,50.0,Resina
+2025-02-05,1.0,Bosque,VC-IMP-44,Bosque,0.0,50.0,Resina
+2025-02-05,1.0,Bosque,VC-IMP-45,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMB-1,Bosque,0.0,40.0,Resina
+2025-02-05,1.0,Bosque,VC-IMB-2,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMB-3,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMB-4,Bosque,0.0,100.0,Resina
+2025-02-05,1.0,Bosque,VC-IMB-5,Bosque,0.0,340.0,Resina
+2025-02-05,1.0,Bosque,VC-IMB-6,Bosque,0.0,50.0,Resina
+2025-02-05,1.0,Bosque,VC-IMB-7,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMB-8,Bosque,0.0,290.0,Resina
+2025-02-05,1.0,Bosque,VC-IMB-9,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMB-10,Bosque,240.0,0.0,Aceite
+2025-02-05,1.0,Bosque,VC-IMB-11,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Bosque,VC-IMB-12,Bosque,50.0,0.0,Aceite
+2025-02-05,1.0,Bosque,VC-IMB-13,Bosque,0.0,100.0,Resina
+2025-02-05,1.0,Bosque,VC-IMB-14,Bosque,30.0,0.0,Aceite
+2025-02-05,1.0,Bosque,VC-IMB-15,Bosque,0.0,0.0,Sin producción
+2025-02-05,1.0,Potrero,VC-IMB-16,Árbol,0.0,30.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-17,Abierto,30.0,0.0,Aceite
+2025-02-05,1.0,Potrero,VC-IMB-18,Abierto,240.0,0.0,Aceite
+2025-02-05,1.0,Potrero,VC-IMB-19,Abierto,120.0,0.0,Aceite
+2025-02-05,1.0,Potrero,VC-IMB-20,Abierto,130.0,0.0,Aceite
+2025-02-05,1.0,Potrero,VC-IMB-21,Abierto,0.0,40.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-22,Bosquete,0.0,60.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-23,Bosquete,0.0,140.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-24,Bosquete,0.0,20.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-25,Bosquete,30.0,0.0,Aceite
+2025-02-05,1.0,Potrero,VC-IMB-26,Bosquete,0.0,30.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-27,Bosquete,0.0,80.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-28,Bosquete,0.0,0.0,Sin producción
+2025-02-05,1.0,Potrero,VC-IMB-29,Bosquete,0.0,20.0,Resina
+2025-02-05,1.0,Potrero,VC-IMB-30,Bosquete,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-31,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-32,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-33,Bosque,0.0,100.0,Resina
+2025-04-11,2.0,Bosque,VC-IMP-34,Bosque,0.0,40.0,Resina
+2025-04-11,2.0,Bosque,VC-IMP-35,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-36,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-37,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-38,Bosque,0.0,20.0,Resina
+2025-04-11,2.0,Bosque,VC-IMP-39,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-40,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-41,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-42,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-43,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMP-44,Bosque,0.0,40.0,Resina
+2025-04-11,2.0,Bosque,VC-IMP-45,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMB-1,Bosque,0.0,40.0,Resina
+2025-04-11,2.0,Bosque,VC-IMB-2,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMB-3,Bosque,100.0,0.0,Aceite
+2025-04-11,2.0,Bosque,VC-IMB-4,Bosque,0.0,100.0,Resina
+2025-04-11,2.0,Bosque,VC-IMB-5,Bosque,0.0,140.0,Resina
+2025-04-11,2.0,Bosque,VC-IMB-6,Bosque,0.0,80.0,Resina
+2025-04-11,2.0,Bosque,VC-IMB-7,Bosque,0.0,10.0,Resina
+2025-04-11,2.0,Bosque,VC-IMB-8,Bosque,0.0,190.0,Resina
+2025-04-11,2.0,Bosque,VC-IMB-9,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMB-10,Bosque,240.0,0.0,Aceite
+2025-04-11,2.0,Bosque,VC-IMB-11,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMB-12,Bosque,50.0,0.0,Aceite
+2025-04-11,2.0,Bosque,VC-IMB-13,Bosque,0.0,0.0,Sin producción
+2025-04-11,2.0,Bosque,VC-IMB-14,Bosque,40.0,0.0,Aceite
+2025-04-11,2.0,Bosque,VC-IMB-15,Bosque,20.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-16,Árbol,0.0,0.0,Sin producción
+2025-04-11,2.0,Potrero,VC-IMB-17,Abierto,10.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-18,Abierto,240.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-19,Abierto,90.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-20,Abierto,130.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-21,Abierto,0.0,40.0,Resina
+2025-04-11,2.0,Potrero,VC-IMB-22,Bosquete,0.0,20.0,Resina
+2025-04-11,2.0,Potrero,VC-IMB-23,Bosquete,0.0,10.0,Resina
+2025-04-11,2.0,Potrero,VC-IMB-24,Bosquete,0.0,0.0,Sin producción
+2025-04-11,2.0,Potrero,VC-IMB-25,Bosquete,30.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-26,Bosquete,10.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-27,Bosquete,0.0,30.0,Resina
+2025-04-11,2.0,Potrero,VC-IMB-28,Bosquete,40.0,0.0,Aceite
+2025-04-11,2.0,Potrero,VC-IMB-29,Bosquete,0.0,20.0,Resina
+2025-04-11,2.0,Potrero,VC-IMB-30,Bosquete,0.0,20.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-31,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMP-32,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMP-33,Bosque,0.0,20.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-34,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMP-35,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMP-36,Bosque,0.0,10.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-37,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMP-38,Bosque,0.0,10.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-39,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMP-40,Bosque,0.0,20.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-41,Bosque,0.0,10.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-42,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMP-43,Bosque,0.0,30.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-44,Bosque,0.0,10.0,Resina
+2025-06-11,3.0,Bosque,VC-IMP-45,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMB-1,Bosque,0.0,20.0,Resina
+2025-06-11,3.0,Bosque,VC-IMB-2,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMB-3,Bosque,0.0,20.0,Resina
+2025-06-11,3.0,Bosque,VC-IMB-4,Bosque,0.0,20.0,Resina
+2025-06-11,3.0,Bosque,VC-IMB-5,Bosque,0.0,20.0,Resina
+2025-06-11,3.0,Bosque,VC-IMB-6,Bosque,0.0,40.0,Resina
+2025-06-11,3.0,Bosque,VC-IMB-7,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMB-8,Bosque,0.0,100.0,Resina
+2025-06-11,3.0,Bosque,VC-IMB-9,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMB-10,Bosque,120.0,0.0,Aceite
+2025-06-11,3.0,Bosque,VC-IMB-11,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMB-12,Bosque,70.0,0.0,Aceite
+2025-06-11,3.0,Bosque,VC-IMB-13,Bosque,0.0,100.0,Resina
+2025-06-11,3.0,Bosque,VC-IMB-14,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Bosque,VC-IMB-15,Bosque,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-16,Árbol,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-17,Abierto,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-18,Abierto,130.0,0.0,Aceite
+2025-06-11,3.0,Potrero,VC-IMB-19,Abierto,20.0,0.0,Aceite
+2025-06-11,3.0,Potrero,VC-IMB-20,Abierto,60.0,0.0,Aceite
+2025-06-11,3.0,Potrero,VC-IMB-21,Abierto,0.0,50.0,Resina
+2025-06-11,3.0,Potrero,VC-IMB-22,Bosquete,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-23,Bosquete,0.0,90.0,Resina
+2025-06-11,3.0,Potrero,VC-IMB-24,Bosquete,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-25,Bosquete,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-26,Bosquete,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-27,Bosquete,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-28,Bosquete,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-29,Bosquete,0.0,0.0,Sin producción
+2025-06-11,3.0,Potrero,VC-IMB-30,Bosquete,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-31,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-32,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-33,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-34,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-35,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-36,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-37,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-38,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-39,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-40,Bosque,0.0,10.0,Resina
+2025-08-07,4.0,Bosque,VC-IMP-41,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-42,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-43,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-44,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMP-45,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMB-1,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMB-2,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMB-3,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMB-4,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMB-5,Bosque,0.0,25.0,Resina
+2025-08-07,4.0,Bosque,VC-IMB-6,Bosque,0.0,20.0,Resina
+2025-08-07,4.0,Bosque,VC-IMB-7,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMB-8,Bosque,0.0,40.0,Resina
+2025-08-07,4.0,Bosque,VC-IMB-9,Bosque,0.0,20.0,Resina
+2025-08-07,4.0,Bosque,VC-IMB-10,Bosque,60.0,0.0,Aceite
+2025-08-07,4.0,Bosque,VC-IMB-11,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Bosque,VC-IMB-12,Bosque,25.0,0.0,Aceite
+2025-08-07,4.0,Bosque,VC-IMB-13,Bosque,0.0,40.0,Resina
+2025-08-07,4.0,Bosque,VC-IMB-14,Bosque,20.0,0.0,Aceite
+2025-08-07,4.0,Bosque,VC-IMB-15,Bosque,0.0,0.0,Sin producción
+2025-08-07,4.0,Potrero,VC-IMB-16,Árbol,0.0,15.0,Resina
+2025-08-07,4.0,Potrero,VC-IMB-17,Abierto,0.0,50.0,Resina
+2025-08-07,4.0,Potrero,VC-IMB-18,Abierto,50.0,0.0,Aceite
+2025-08-07,4.0,Potrero,VC-IMB-19,Abierto,0.0,0.0,Sin producción
+2025-08-07,4.0,Potrero,VC-IMB-20,Abierto,15.0,0.0,Aceite
+2025-08-07,4.0,Potrero,VC-IMB-21,Abierto,0.0,30.0,Resina
+2025-08-07,4.0,Potrero,VC-IMB-22,Bosquete,0.0,15.0,Resina
+2025-08-07,4.0,Potrero,VC-IMB-23,Bosquete,0.0,0.0,Sin producción
+2025-08-07,4.0,Potrero,VC-IMB-24,Bosquete,10.0,0.0,Aceite
+2025-08-07,4.0,Potrero,VC-IMB-25,Bosquete,0.0,0.0,Sin producción
+2025-08-07,4.0,Potrero,VC-IMB-26,Bosquete,0.0,0.0,Sin producción
+2025-08-07,4.0,Potrero,VC-IMB-27,Bosquete,0.0,20.0,Resina
+2025-08-07,4.0,Potrero,VC-IMB-28,Bosquete,0.0,15.0,Resina
+2025-08-07,4.0,Potrero,VC-IMB-29,Bosquete,0.0,10.0,Resina
+2025-08-07,4.0,Potrero,VC-IMB-30,Bosquete,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-31,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-32,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-33,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-34,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-35,Bosque,0.0,25.0,Resina
+2025-10-09,5.0,Bosque,VC-IMP-36,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-37,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-38,Bosque,0.0,15.0,Resina
+2025-10-09,5.0,Bosque,VC-IMP-39,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-40,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-41,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-42,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-43,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMP-44,Bosque,0.0,10.0,Resina
+2025-10-09,5.0,Bosque,VC-IMP-45,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMB-1,Bosque,0.0,15.0,Resina
+2025-10-09,5.0,Bosque,VC-IMB-2,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMB-3,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMB-4,Bosque,0.0,10.0,Resina
+2025-10-09,5.0,Bosque,VC-IMB-5,Bosque,0.0,20.0,Resina
+2025-10-09,5.0,Bosque,VC-IMB-6,Bosque,0.0,20.0,Resina
+2025-10-09,5.0,Bosque,VC-IMB-7,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMB-8,Bosque,0.0,15.0,Resina
+2025-10-09,5.0,Bosque,VC-IMB-9,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMB-10,Bosque,20.0,0.0,Aceite
+2025-10-09,5.0,Bosque,VC-IMB-11,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMB-12,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Bosque,VC-IMB-13,Bosque,0.0,20.0,Resina
+2025-10-09,5.0,Bosque,VC-IMB-14,Bosque,15.0,0.0,Aceite
+2025-10-09,5.0,Bosque,VC-IMB-15,Bosque,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-16,Árbol,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-17,Abierto,0.0,20.0,Resina
+2025-10-09,5.0,Potrero,VC-IMB-18,Abierto,50.0,0.0,Aceite
+2025-10-09,5.0,Potrero,VC-IMB-19,Abierto,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-20,Abierto,10.0,0.0,Aceite
+2025-10-09,5.0,Potrero,VC-IMB-21,Abierto,0.0,25.0,Resina
+2025-10-09,5.0,Potrero,VC-IMB-22,Bosquete,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-23,Bosquete,0.0,20.0,Resina
+2025-10-09,5.0,Potrero,VC-IMB-24,Bosquete,10.0,0.0,Aceite
+2025-10-09,5.0,Potrero,VC-IMB-25,Bosquete,5.0,0.0,Aceite
+2025-10-09,5.0,Potrero,VC-IMB-26,Bosquete,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-27,Bosquete,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-28,Bosquete,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-29,Bosquete,0.0,0.0,Sin producción
+2025-10-09,5.0,Potrero,VC-IMB-30,Bosquete,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-31,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-32,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-33,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-34,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-35,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-36,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-37,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-38,Bosque,0.0,10.0,Resina
+2025-12-11,6.0,Bosque,VC-IMP-39,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-40,Bosque,0.0,10.0,Resina
+2025-12-11,6.0,Bosque,VC-IMP-41,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-42,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMP-43,Bosque,0.0,5.0,Resina
+2025-12-11,6.0,Bosque,VC-IMP-44,Bosque,0.0,5.0,Resina
+2025-12-11,6.0,Bosque,VC-IMP-45,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMB-1,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMB-2,Bosque,0.0,15.0,Resina
+2025-12-11,6.0,Bosque,VC-IMB-3,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMB-4,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMB-5,Bosque,0.0,25.0,Resina
+2025-12-11,6.0,Bosque,VC-IMB-6,Bosque,0.0,15.0,Resina
+2025-12-11,6.0,Bosque,VC-IMB-7,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMB-8,Bosque,0.0,15.0,Resina
+2025-12-11,6.0,Bosque,VC-IMB-9,Bosque,0.0,10.0,Resina
+2025-12-11,6.0,Bosque,VC-IMB-10,Bosque,40.0,0.0,Aceite
+2025-12-11,6.0,Bosque,VC-IMB-11,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Bosque,VC-IMB-12,Bosque,40.0,0.0,Aceite
+2025-12-11,6.0,Bosque,VC-IMB-13,Bosque,0.0,20.0,Resina
+2025-12-11,6.0,Bosque,VC-IMB-14,Bosque,15.0,0.0,Aceite
+2025-12-11,6.0,Bosque,VC-IMB-15,Bosque,0.0,0.0,Sin producción
+2025-12-11,6.0,Potrero,VC-IMB-16,Árbol,0.0,0.0,Sin producción
+2025-12-11,6.0,Potrero,VC-IMB-17,Abierto,0.0,15.0,Resina
+2025-12-11,6.0,Potrero,VC-IMB-18,Abierto,60.0,0.0,Aceite
+2025-12-11,6.0,Potrero,VC-IMB-19,Abierto,0.0,10.0,Resina
+2025-12-11,6.0,Potrero,VC-IMB-20,Abierto,10.0,0.0,Aceite
+2025-12-11,6.0,Potrero,VC-IMB-21,Abierto,0.0,30.0,Resina
+2025-12-11,6.0,Potrero,VC-IMB-22,Bosquete,0.0,10.0,Resina
+2025-12-11,6.0,Potrero,VC-IMB-23,Bosquete,0.0,70.0,Resina
+2025-12-11,6.0,Potrero,VC-IMB-24,Bosquete,10.0,0.0,Aceite
+2025-12-11,6.0,Potrero,VC-IMB-25,Bosquete,15.0,0.0,Aceite
+2025-12-11,6.0,Potrero,VC-IMB-26,Bosquete,0.0,0.0,Sin producción
+2025-12-11,6.0,Potrero,VC-IMB-27,Bosquete,0.0,30.0,Resina
+2025-12-11,6.0,Potrero,VC-IMB-28,Bosquete,20.0,0.0,Aceite
+2025-12-11,6.0,Potrero,VC-IMB-29,Bosquete,0.0,0.0,Sin producción
+2025-12-11,6.0,Potrero,VC-IMB-30,Bosquete,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-31,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-32,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-33,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-34,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-35,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-36,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-37,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-38,Bosque,0.0,10.0,Resina
+2026-02-12,7.0,Bosque,VC-IMP-39,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-40,Bosque,0.0,10.0,Resina
+2026-02-12,7.0,Bosque,VC-IMP-41,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-42,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMP-43,Bosque,0.0,15.0,Resina
+2026-02-12,7.0,Bosque,VC-IMP-44,Bosque,0.0,15.0,Resina
+2026-02-12,7.0,Bosque,VC-IMP-45,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMB-1,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMB-2,Bosque,0.0,15.0,Resina
+2026-02-12,7.0,Bosque,VC-IMB-3,Bosque,0.0,20.0,Resina
+2026-02-12,7.0,Bosque,VC-IMB-4,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMB-5,Bosque,0.0,30.0,Resina
+2026-02-12,7.0,Bosque,VC-IMB-6,Bosque,0.0,30.0,Resina
+2026-02-12,7.0,Bosque,VC-IMB-7,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMB-8,Bosque,0.0,30.0,Resina
+2026-02-12,7.0,Bosque,VC-IMB-9,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMB-10,Bosque,10.0,0.0,Aceite
+2026-02-12,7.0,Bosque,VC-IMB-11,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Bosque,VC-IMB-12,Bosque,20.0,0.0,Aceite
+2026-02-12,7.0,Bosque,VC-IMB-13,Bosque,0.0,40.0,Resina
+2026-02-12,7.0,Bosque,VC-IMB-14,Bosque,15.0,0.0,Aceite
+2026-02-12,7.0,Bosque,VC-IMB-15,Bosque,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-16,Árbol,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-17,Abierto,0.0,15.0,Resina
+2026-02-12,7.0,Potrero,VC-IMB-18,Abierto,50.0,0.0,Aceite
+2026-02-12,7.0,Potrero,VC-IMB-19,Abierto,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-20,Abierto,30.0,0.0,Aceite
+2026-02-12,7.0,Potrero,VC-IMB-21,Abierto,0.0,20.0,Resina
+2026-02-12,7.0,Potrero,VC-IMB-22,Bosquete,0.0,10.0,Resina
+2026-02-12,7.0,Potrero,VC-IMB-23,Bosquete,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-24,Bosquete,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-25,Bosquete,10.0,0.0,Aceite
+2026-02-12,7.0,Potrero,VC-IMB-26,Bosquete,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-27,Bosquete,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-28,Bosquete,0.0,0.0,Sin producción
+2026-02-12,7.0,Potrero,VC-IMB-29,Bosquete,0.0,15.0,Resina
+2026-02-12,7.0,Potrero,VC-IMB-30,Bosquete,0.0,0.0,Sin producción

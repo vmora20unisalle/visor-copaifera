@@ -1,0 +1,8 @@
+﻿bloque,indicador,detalle,estadistico,p
+Producción,Aceite Bosque vs Potrero,Mediana Bosque 0 mL; Potrero 10 mL,Mann–Whitney U=146.5,0.018953
+Producción,Resina Bosque vs Potrero,Mediana Bosque 27.5 mL; Potrero 30 mL,Mann–Whitney U=213.5,0.788489
+Producción temporal,Cambio temporal de aceite,7 muestreos,Friedman=35.261,4e-06
+Producción temporal,Cambio temporal de resina,7 muestreos,Friedman=38.167,1e-06
+Borde-NDVI,NDVI histórico medio vs distancia al borde,45 árboles,Spearman ρ=0.711,4.357658e-08
+Clima,RAFA vs % productores de aceite (sin referencia Árbol),Análisis exploratorio,Spearman ρ=0.761,0.000248
+Forraje,Aforo abierto vs bajo árbol,Promedios 688.3 vs 418.3 g/m²,Wilcoxon W=1.0,0.03125
