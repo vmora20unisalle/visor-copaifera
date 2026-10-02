@@ -1,0 +1,3 @@
+Las imágenes assets se renderizaron directamente de MODALIDAD_GRADO.gdb a una malla web EPSG:3857 común.
+Colores de estado: atributo ESTADO_ECOLOGICO ya aportado. No representa un IBP recalculado por píxel o parche.
+Los valores consultables y los CSV originales se conservan en data/.

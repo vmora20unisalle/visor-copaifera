@@ -1,0 +1,22 @@
+{
+  "source": "MODALIDAD_GRADO.gdb",
+  "coverage_different": true,
+  "render_crs": "EPSG:3857",
+  "image_shape": [
+    3072,
+    2399
+  ],
+  "pixel_size_m": [
+    6.07192823651106,
+    6.07122114970196
+  ],
+  "note": "Verificación técnica de imágenes distintas; no se recalculó la matriz de transición del proyecto.",
+  "ecological_state_source": "ESTADO_ECOLOGICO de cada capa original, no reclasificado",
+  "files": {
+    "cobertura_2018": "cf4554cf6767e4e2087b570ece2ec14bea22ea9c9987a7f70f9d55c458852ef2",
+    "cobertura_2023": "0490acb612149391bb4ef1d1a35133b090d4ffbf1a60e1ec28436a78ac5426cb",
+    "estado_2018": "0c1e402a702b04aa0ede4fd28e566664c20041bb636c12c9167bf6647f8c5f8f",
+    "estado_2023": "6a3dddec31e3fcedc62a7c58a7aa63ecb95c552b746f2451fb3e1068f4525aa1",
+    "patrones_ndvi": "da2a81779f2f58e1c7a7e125ccf2c59bd30c729ff0d2238d65d88622bcd6a109"
+  }
+}
