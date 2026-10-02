@@ -1,12 +1,14 @@
 # Copaifera: paisaje y sistemas ganaderos
 ## Fragmentación, efecto de borde y resultados productivos
 
-Versión **3.0.0**. Aplicación de consulta con fondo claro y títulos verdes.
+Versión **4.0.0**. Aplicación de consulta con fondo claro y títulos verdes.
+
+**Cambio v4:** en pantallas móviles, todos los gráficos de barras, líneas y otros gráficos cartesianos quedan estáticos para evitar zoom o desplazamiento accidental al tocar con uno o dos dedos. Los gráficos de torta conservan su interacción. La versión de escritorio mantiene el comportamiento anterior.
 Esta actualización conserva las capas, geometrías y tablas de la versión 2.
 
 ## Actualizar el visor que ya está publicado
 
-1. Descomprime `Visor_Copaifera_Actualizado_v3.zip`.
+1. Descomprime `Visor_Copaifera_Actualizado_v4.zip`.
 2. Abre el repositorio `vmora20unisalle/visor-copaifera`, en la rama `main`.
 3. Pulsa **Add file → Upload files**.
 4. Sube el contenido descomprimido del paquete. `app.py`, `requirements.txt`, `data/` y `visor_web/` deben quedar al mismo nivel, sin una carpeta adicional encima.

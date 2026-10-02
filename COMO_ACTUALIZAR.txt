@@ -1,6 +1,6 @@
 ACTUALIZAR A LA VERSION 3 — SIN CAMBIAR TU ENLACE
 
-1. Descomprime Visor_Copaifera_Actualizado_v3.zip.
+1. Descomprime Visor_Copaifera_Actualizado_v4.zip.
 2. Abre vmora20unisalle/visor-copaifera en GitHub, rama main.
 3. Add file > Upload files.
 4. Arrastra el CONTENIDO descomprimido del paquete.
@@ -8,7 +8,7 @@ ACTUALIZAR A LA VERSION 3 — SIN CAMBIAR TU ENLACE
    Incluye visor_web COMPLETO, especialmente assets y los archivos .js.
    No subas el ZIP cerrado ni pongas otra carpeta encima de app.py.
 5. Commit changes. Mensaje sugerido:
-   Actualizar visor v3: zoom, tortas, paletas y encuadre climático
+   Actualizar visor v4: gráficos estáticos en móvil; escritorio sin cambios
 6. Espera la actualización de Streamlit y recarga tu enlace.
    Si ves la versión anterior: Manage app > Reboot app y recarga.
 

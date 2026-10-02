@@ -22,3 +22,14 @@
 .pattern-legend-row strong{color:var(--green);white-space:nowrap;}
 @media(max-width:800px){.pattern-pie-layout{grid-template-columns:1fr;gap:8px}.chart.pattern-pie{height:340px}}
 @media(max-width:620px){.distribution-grid{grid-template-columns:1fr;gap:15px}.distribution-environment{padding:12px}.chart.pie-chart{height:275px}.chart.pattern-pie{height:295px}.pattern-legend-row{font-size:11px;gap:8px}.distribution-line{font-size:12px}.map-basemap{max-width:147px}}
+
+/* Versión 4: en móvil, los gráficos no circulares son estáticos para evitar zoom/pan accidental.
+   Las tortas conservan su interacción. En escritorio no se modifica el comportamiento. */
+@media(max-width:620px){
+  .chart.mobile-static-chart{
+    pointer-events:none;
+    touch-action:pan-y;
+    user-select:none;
+    -webkit-user-select:none;
+  }
+}

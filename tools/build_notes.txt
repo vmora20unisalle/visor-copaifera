@@ -1,1 +1,3 @@
 v3: recoloración RGB por clase de los PNG de v2. Se conservan las máscaras alfa, dimensiones, extensión EPSG:3857 y datos fuente. Tortas derivadas de conteos únicos por árbol y campaña; áreas de patrones originales. Encuadre climático visual por polígono contenedor, sin nuevos buffers.
+
+v4: En ancho <620 px, todos los gráficos Plotly no-pie usan staticPlot y pointer-events:none para impedir zoom/pan táctil. Los gráficos pie conservan interacción. Escritorio sin cambios.
