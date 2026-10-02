@@ -1,0 +1,26 @@
+{
+  "fuente": "Leyendas de las tres capturas aportadas",
+  "coberturas": {
+    "Bosque": "#4de602",
+    "Herbazal": "#feac02",
+    "Cultivos": "#fefd01",
+    "Sin cobertura": "#fe0002",
+    "Sin Cobertura": "#fe0002",
+    "Agua": "#014da7",
+    "Vegetación Mixta": "#fed380"
+  },
+  "estado_ecologico": {
+    "Bueno": "#4ee601",
+    "Regular": "#fefe00",
+    "Deficiente": "#df0525"
+  },
+  "patrones_ndvi": {
+    "Oscillating Hot Spot": "#fe113b",
+    "Intensifying Cold Spot": "#012574",
+    "Persistent Cold Spot": "#005ce7",
+    "Diminishing Cold Spot": "#72b3fd",
+    "Sporadic Cold Spot": "#71e0fc",
+    "Oscillating Cold Spot": "#bfe8fc",
+    "No Pattern Detected": "#241f1e"
+  }
+}

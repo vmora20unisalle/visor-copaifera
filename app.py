@@ -1,4 +1,4 @@
-"""Copaifera v2. Streamlit sirve una interfaz de consulta responsive local."""
+"""Copaifera v3. Streamlit sirve una interfaz de consulta responsive local."""
 from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
@@ -23,7 +23,7 @@ if missing:
     st.error("Faltan archivos de la actualización: " + ", ".join(missing))
     st.info("Sube la carpeta visor_web completa al mismo nivel de app.py y requirements.txt.")
     st.stop()
-visor = components.declare_component("copaifera_resultados_v2", path=str(FRONTEND))
+visor = components.declare_component("copaifera_resultados_v3", path=str(FRONTEND))
 # La selección se gestiona en el navegador y no recarga todos los mapas.
 # El componente adapta su altura mediante el protocolo oficial de Streamlit.
-visor(version="2.0.0", key="visor_copaifera_v2", default=None)
+visor(version="3.0.0", key="visor_copaifera_v3", default=None)

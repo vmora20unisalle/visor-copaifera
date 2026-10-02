@@ -13,10 +13,53 @@
   "note": "Verificación técnica de imágenes distintas; no se recalculó la matriz de transición del proyecto.",
   "ecological_state_source": "ESTADO_ECOLOGICO de cada capa original, no reclasificado",
   "files": {
-    "cobertura_2018": "cf4554cf6767e4e2087b570ece2ec14bea22ea9c9987a7f70f9d55c458852ef2",
-    "cobertura_2023": "0490acb612149391bb4ef1d1a35133b090d4ffbf1a60e1ec28436a78ac5426cb",
-    "estado_2018": "0c1e402a702b04aa0ede4fd28e566664c20041bb636c12c9167bf6647f8c5f8f",
-    "estado_2023": "6a3dddec31e3fcedc62a7c58a7aa63ecb95c552b746f2451fb3e1068f4525aa1",
-    "patrones_ndvi": "da2a81779f2f58e1c7a7e125ccf2c59bd30c729ff0d2238d65d88622bcd6a109"
-  }
+    "cobertura_2018": "fa511fccff6f64cafaa7cae635f6e95f0b67fe05ba3b87c03b0982338d6e03c3",
+    "cobertura_2023": "14c2adec7e214eb4b93396b7b5781d472090480ab826c1a41d08884da8db9b56",
+    "estado_2018": "32b61d362d48aa043ae27c90d122f5ae3b66ef3f285585703aee95580cbfd18b",
+    "estado_2023": "3b7e54ebad02652ea4eef452053fc2039ef62679c3a5b39a8f01de1d70d5d40f",
+    "patrones_ndvi": "0bc55a360713784c9b5a062680d7e870078fc3e6e2138604e68afe3efe9121c0"
+  },
+  "version": "3.0.0",
+  "palette_reference": "Leyendas de 1001358812.jpg, 1001358814.jpg y 1001358816.jpg; colores RGB tomados del interior de las muestras JPEG.",
+  "recolor_checks": {
+    "cobertura_2018": {
+      "Bosque": 1018356,
+      "Herbazal": 1317849,
+      "Cultivos": 420071,
+      "Sin cobertura": 285573,
+      "Sin Cobertura": 285573,
+      "Agua": 52446,
+      "Vegetación Mixta": 0
+    },
+    "cobertura_2023": {
+      "Bosque": 1175458,
+      "Herbazal": 984044,
+      "Cultivos": 217980,
+      "Sin cobertura": 275376,
+      "Sin Cobertura": 275376,
+      "Agua": 0,
+      "Vegetación Mixta": 441397
+    },
+    "estado_2018": {
+      "Bueno": 2756276,
+      "Regular": 52446,
+      "Deficiente": 285573
+    },
+    "estado_2023": {
+      "Bueno": 1175458,
+      "Regular": 1918797,
+      "Deficiente": 0
+    },
+    "patrones_ndvi": {
+      "Diminishing Cold Spot": 29340,
+      "Intensifying Cold Spot": 2173,
+      "No Pattern Detected": 43290,
+      "Oscillating Cold Spot": 1274201,
+      "Oscillating Hot Spot": 1306660,
+      "Persistent Cold Spot": 90918,
+      "Sporadic Cold Spot": 13129
+    }
+  },
+  "thematic_geometries_changed": false,
+  "raw_data_changed": false
 }

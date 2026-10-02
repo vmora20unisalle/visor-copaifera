@@ -1,18 +1,24 @@
-ACTUALIZAR SIN CAMBIAR TU ENLACE
+ACTUALIZAR A LA VERSION 3 — SIN CAMBIAR TU ENLACE
 
-1. Descomprime este ZIP.
+1. Descomprime Visor_Copaifera_Actualizado_v3.zip.
 2. Abre vmora20unisalle/visor-copaifera en GitHub, rama main.
 3. Add file > Upload files.
-4. Arrastra TODOS los archivos y carpetas de esta version.
-   Debes ver app.py y requirements.txt en la raiz y visor_web al lado.
-   No subas el ZIP cerrado ni pongas todo dentro de otra carpeta adicional.
-5. Commit changes.
-6. Espera a que Streamlit tome los cambios y recarga el visor.
-   Si sigue la version anterior: Manage app > Reboot app.
+4. Arrastra el CONTENIDO descomprimido del paquete.
+   app.py y requirements.txt deben seguir en la raíz del repositorio.
+   Incluye visor_web COMPLETO, especialmente assets y los archivos .js.
+   No subas el ZIP cerrado ni pongas otra carpeta encima de app.py.
+5. Commit changes. Mensaje sugerido:
+   Actualizar visor v3: zoom, tortas, paletas y encuadre climático
+6. Espera la actualización de Streamlit y recarga tu enlace.
+   Si ves la versión anterior: Manage app > Reboot app y recarga.
 
-La carpeta visor_web es OBLIGATORIA. No actualices solo app.py.
-No hace falta borrar el repositorio ni crear otra app.
-El titulo cambia a "Copaifera: paisaje y sistemas ganaderos".
+No es necesario crear otro repositorio, otra app o cambiar el QR.
+Los cambios no se aplican al enlace público hasta actualizar el repositorio.
 
-Para consultar localmente sin instalar Python: abre visor_web/index.html.
-Los fondos satelitales/calles requieren Internet; las capas tematicas estan incluidas.
+PRUEBA DESPUES DE ACTUALIZAR
+- Elige un árbol: ficha y producción individual deben cambiar.
+- Cambia el muestreo de las tortas: Bosque y Potrero muestran número y %.
+- Abre Patrones NDVI: nueva paleta y torta de superficie.
+- Elige Bosque en clima: se ve el polígono completo y la escala de 100 m.
+- Elige las demás referencias: escala de referencia de 20 m.
+- Comprueba el fondo satelital; su disponibilidad depende del proveedor.
