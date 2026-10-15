@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 
 BASE = Path(__file__).resolve().parent
 FRONTEND = BASE / "visor_web"
-st.set_page_config(page_title="Copaifera: paisaje y sistemas ganaderos", page_icon="🌿", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Copaifera pubiflora: fragmentación y efecto de borde", page_icon="🌿", layout="wide", initial_sidebar_state="collapsed")
 st.markdown("""
 <style>
 .stApp,[data-testid="stAppViewContainer"]{background:#f4f7f2;}
