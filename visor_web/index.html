@@ -1,8 +1,32 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><title>Copaifera: paisaje y sistemas ganaderos</title><link rel="stylesheet" href="style.css?v=3.0.0"><script src="datos.js?v=3.0.0"></script><script src="vendor/plotly.min.js" defer></script><script src="mapas.js?v=3.0.0" defer></script><script src="interfaz.js?v=3.0.0" defer></script></head><body>
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f7f2">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Explora coberturas, efecto de borde, producción de Copaifera pubiflora, NDVI y microclima en el CIC La Macarena, Yopal.">
+<title>Copaifera | Paisaje y sistemas ganaderos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4.1.0">
+<link rel="stylesheet" href="ui-refinements.css?v=4.1.0">
+<script src="datos.js?v=4.0.0"></script>
+<script src="vendor/plotly.min.js" defer></script>
+<script src="mapas.js?v=4.1.0" defer></script>
+<script src="interfaz.js?v=4.1.0" defer></script>
+<script src="experiencia.js?v=4.1.0" defer></script>
+</head><body>
 <main id="app">
-<header class="masthead"><div class="brand-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 34V17m0 8L11 18m9 3 9-8M9 28C0 13 14 5 20 3c11 4 17 14 12 22-5 8-14 8-23 3Z"/><path d="M9 35h24"/></svg></div><div><div class="eyebrow">Universidad de La Salle · Visor de resultados</div><h1>Copaifera: paisaje y sistemas ganaderos</h1><p class="subtitle">Fragmentación, efecto de borde y resultados productivos · Yopal, Casanare</p></div><span class="version">Consulta interactiva · v4</span></header>
+<header class="masthead site-hero" aria-label="Presentación del visor">
+  <div class="hero-topline"><span class="hero-topline-label"><span class="hero-seed" aria-hidden="true"></span> Investigación territorial · Universidad de La Salle</span><span class="hero-place">Yopal · Casanare</span></div>
+  <div class="hero-content">
+    <div class="brand-icon" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><path d="M22 38V18M22 30l-9-8M22 25l10-12M13 22C7 21 5 16 6 11c8-1 13 4 13 11M31 14c-2-7 2-11 8-12 3 8-1 13-8 14M12 38h21"/><path d="M12 38c2-6 17-6 21 0"/></svg></div>
+    <div class="hero-copy"><div class="eyebrow">CIC La Macarena · Visor geográfico</div><h1><em>Copaifera</em><span class="hero-title-detail">: paisaje y sistemas ganaderos</span></h1><p class="subtitle">Explora las coberturas, las condiciones del entorno y los resultados productivos de <i>C. pubiflora</i> desde su ubicación en el territorio.</p></div>
+  </div>
+  <div class="hero-bottom"><span class="hero-topic">Fragmentación del paisaje <span aria-hidden="true">·</span> Efecto de borde <span aria-hidden="true">·</span> Producción</span><span class="version">Consulta interactiva <span class="version-dot" aria-hidden="true"></span> v4.1</span></div>
+</header>
 <div class="kpis" id="kpis"></div>
-<nav class="nav" role="tablist" aria-label="Secciones del visor"><button role="tab" id="tab-paisaje" aria-controls="paisaje" aria-selected="true" data-tab="paisaje">Paisaje</button><button role="tab" id="tab-arboles" aria-controls="arboles" aria-selected="false" data-tab="arboles">Árboles y producción</button><button role="tab" id="tab-ndvi" aria-controls="ndvi" aria-selected="false" data-tab="ndvi">Patrones NDVI</button><button role="tab" id="tab-clima" aria-controls="clima" aria-selected="false" data-tab="clima">Clima y forraje</button></nav>
+<nav class="nav" role="tablist" aria-label="Secciones del visor"><button role="tab" id="tab-paisaje" aria-controls="paisaje" aria-selected="true" data-tab="paisaje"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="m3 14 9 5 9-5M3 18l9 5 9-5"/></svg><span>Paisaje</span></button><button role="tab" id="tab-arboles" aria-controls="arboles" aria-selected="false" data-tab="arboles"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-8m0 4-5-5m5 2 5-6"/><path d="M6 17C2 12 6 5 12 3c7 3 10 11 6 16"/><path d="M5 22h14"/></svg><span>Árboles y producción</span></button><button role="tab" id="tab-ndvi" aria-controls="ndvi" aria-selected="false" data-tab="ndvi"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V5m0 15h18"/><path d="m6 16 4-5 4 2 5-8"/><circle cx="19" cy="5" r="1.5"/></svg><span>Patrones NDVI</span></button><button role="tab" id="tab-clima" aria-controls="clima" aria-selected="false" data-tab="clima"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15a5 5 0 0 1 2-9 6 6 0 0 1 11 2 4 4 0 0 1 1 8H8"/><path d="m9 19-1 2m5-2-1 2m5-2-1 2"/></svg><span>Clima y forraje</span></button></nav>
 <section id="paisaje" class="panel" role="tabpanel" aria-labelledby="tab-paisaje">
 <div class="section-head"><h2>Dos años, un paisaje</h2><p>Compara las coberturas y, debajo, el estado ecológico de 2018 y 2023. Arrastra el divisor o utiliza el control bajo cada mapa.</p></div>
 <div class="card"><div class="card-head"><div><h3>Cambio de coberturas</h3><p>Izquierda: 2018 · Derecha: 2023</p></div><span class="tag">Comparación espacial</span></div><div id="map-coberturas" class="map-shell compare"></div><div id="slider-coberturas" class="map-foot"></div><div id="legend-coberturas" class="legend"></div><p class="map-help">Pulsa una zona para consultar cobertura y métricas. Botones + / − para acercar; arrastra el mapa para recorrerlo.</p></div>

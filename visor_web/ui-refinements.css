@@ -1,0 +1,256 @@
+/*
+ * Copaifera · capa editorial de identidad (v4.1)
+ * Sólo presentación. Se conserva style.css y los datos, funciones y paletas originales.
+ * Tipografías remotas con alternativas locales. No se distribuyen archivos de fuentes.
+ */
+:root {
+  --font-ui: 'DM Sans', 'Trebuchet MS', Arial, sans-serif;
+  --font-editorial: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --bg: #f4f7f2;
+  --paper: #fffefa;
+  --ink: #273a31;
+  --green: #23553c;
+  --mid: #3b7552;
+  --line: #dce5da;
+  --soft: #edf4e9;
+  --radius: 15px;
+  --earth: #ad8245;
+}
+html {scroll-behavior:smooth; -webkit-text-size-adjust:100%;}
+html, body {font-family:var(--font-ui); text-rendering:optimizeLegibility;}
+body {
+  background: radial-gradient(ellipse at 3% 2%, rgba(220,233,212,.48),transparent 32%),
+              radial-gradient(ellipse at 98% 82%,rgba(237,233,214,.45),transparent 30%),var(--bg);
+}
+main#app {max-width:1400px; padding:26px clamp(15px,2.5vw,36px) 20px;}
+h1,h2,h3,h4{letter-spacing:-.018em;}
+h1,h2,.tree-label {font-family:var(--font-editorial); font-weight:600;}
+h1 {letter-spacing:-.04em;}
+h2 {font-size:clamp(1.7rem,2.15vw,2.15rem);line-height:1.19;}
+h3 {font-size:1.1rem;font-weight:700;letter-spacing:-.015em;}
+h4 {font-size:1.04rem;font-weight:700;}
+button, input, select, table, .map-tooltip {font-family:var(--font-ui);}
+
+/* Cabecera: enfoque de cuaderno de campo, sin cambiar la identidad cromática. */
+.site-hero {
+  position:relative;display:block;overflow:hidden; isolation:isolate;
+  padding:24px clamp(18px,3vw,42px) 19px;
+  border:1px solid #cfdfca;border-radius:20px;
+  background:linear-gradient(110deg,rgba(248,250,244,.98) 0%,rgba(238,246,232,.96) 70%,rgba(234,242,226,.96) 100%);
+  box-shadow:0 8px 24px rgba(31,65,42,.045);
+  margin:0 0 18px;
+}
+.site-hero::before {
+  content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(#275c40,#9bb17a);z-index:-1;
+}
+.site-hero::after {
+  content:"";position:absolute;right:-94px;top:-146px;width:440px;height:440px;
+  border:1px solid rgba(67,116,81,.13);border-radius:48% 52% 52% 48%;z-index:-1;pointer-events:none;
+  box-shadow:0 0 0 33px rgba(67,116,81,.035),0 0 0 64px rgba(67,116,81,.04),0 0 0 95px rgba(67,116,81,.024);
+  transform:rotate(-24deg);
+}
+.hero-topline,.hero-bottom {display:flex;align-items:center;justify-content:space-between;gap:15px;}
+.hero-topline {margin-bottom:22px;}
+.hero-topline-label,.hero-place,.hero-topic {font-size:11px;color:#436951;letter-spacing:.045em;font-weight:700;}
+.hero-topline-label {display:inline-flex;align-items:center;gap:9px;}
+.hero-place {white-space:nowrap;color:#566b59;}
+.hero-seed {width:7px;height:7px;border-radius:50% 45% 50% 45%;transform:rotate(24deg);background:#77a37b;box-shadow:0 0 0 4px #dfecdc;flex:none;}
+.hero-content {display:flex;align-items:center;gap:20px;max-width:1010px;}
+.site-hero .brand-icon {
+  width:75px;height:75px;flex-shrink:0;border:1px solid #c6d7c0;
+  border-radius:20px 20px 10px 20px;
+  background:linear-gradient(152deg,#ecf4e6,#d6e8d2);
+  box-shadow:inset 0 0 0 4px #f7faf2,0 5px 13px rgba(43,95,57,.08);
+}
+.site-hero .brand-icon svg {width:43px;height:43px;stroke:#275c40;}
+.site-hero .eyebrow {font-size:10.5px;color:#3c7154;letter-spacing:.15em;margin-bottom:9px;font-weight:700;}
+.site-hero h1 {font-size:clamp(2rem,3.45vw,3.5rem);line-height:1.08;color:#1e4a34;max-width:1050px;}
+.site-hero h1 em {font-style:italic;font-weight:600;}
+.hero-title-detail{font-style:normal;}
+.site-hero .subtitle {font-size:clamp(13px,1.1vw,15px);line-height:1.65;color:#425b49;max-width:770px;margin:12px 0 0;}
+.hero-bottom {margin-top:25px;padding-top:13px;border-top:1px solid rgba(80,122,80,.18);}
+.hero-topic {font-weight:500;letter-spacing:0;font-size:12px;}
+.hero-topic span {padding:0 7px;color:#8daa81;}
+.site-hero .version {
+  display:inline-flex;align-items:center;gap:8px;margin:0;white-space:nowrap;
+  background:#f4f9f0;font-weight:700;font-size:10.5px;letter-spacing:.015em;
+  border-color:#cedfc7;color:#2d6446;padding:7px 12px;
+}
+.version-dot {display:inline-block;width:5px;height:5px;border-radius:50%;background:#5a9770;}
+
+/* Cuatro indicadores integrados en una franja más orgánica. */
+.kpis{gap:12px;margin-bottom:20px;}
+.kpi {
+  min-height:90px;border:1px solid #d9e4d5;border-radius:13px;
+  box-shadow:0 2px 10px rgba(31,66,40,.035);gap:15px;padding:16px 20px;
+  position:relative;overflow:hidden;
+}
+.kpi::before {content:"";width:3px;height:39px;flex:none;background:#7d9e7d;border-radius:4px;}
+.kpi:nth-child(2)::before{background:#ccae77;}
+.kpi:nth-child(3)::before{background:#77a8ab;}
+.kpi:nth-child(4)::before{background:#8ea07d;}
+.kpi strong {font-family:var(--font-editorial);font-size:35px;line-height:.95;font-weight:650;color:#25573d;letter-spacing:-.035em;}
+.kpi span {font-size:12px;letter-spacing:.005em;line-height:1.5;color:#576d5d;}
+
+/* Navegación con iconos discretos y estados reconocibles. */
+.nav {
+  position:sticky;top:10px;z-index:12;
+  background:rgba(234,241,229,.93);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid #d4e2cf;border-radius:13px;padding:5px;margin-bottom:30px;
+  box-shadow:0 5px 18px rgba(30,67,41,.045);
+}
+.nav button {
+  display:flex;align-items:center;justify-content:center;gap:9px;min-height:46px;
+  border-radius:9px;font-size:13px;letter-spacing:.005em;font-weight:700;
+  transition:background-color .19s ease, color .19s ease,box-shadow .19s ease;
+}
+.nav button[aria-selected="true"]{background:#23553c;box-shadow:0 3px 10px rgba(22,67,40,.12);}
+.nav-icon {width:17px;height:17px;flex:none;opacity:.82;}
+.nav button[aria-selected="true"] .nav-icon{opacity:1;}
+
+/* Lectura de los capítulos: jerarquía editorial y tarjetas sobrias. */
+.section-head {padding:2px 0 15px;margin-bottom:20px;border-bottom:1px solid #d9e4d4;}
+.panel>.section-head:first-child::before{
+  display:block;font-family:var(--font-ui);font-size:10px;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;color:#6f886f;margin-bottom:10px;
+}
+#paisaje>.section-head:first-child::before{content:"01  /  Lectura territorial";}
+#arboles>.section-head:first-child::before{content:"02  /  Individuos monitoreados";}
+#ndvi>.section-head:first-child::before{content:"03  /  Comportamiento de la vegetación";}
+#clima>.section-head:first-child::before{content:"04  /  Condiciones ambientales";}
+.section-head p {font-size:14px;line-height:1.63;max-width:780px;margin:5px 0 0;}
+.section-head.section-rule {margin-top:15px;padding-top:20px;}
+.section-head.section-rule::before {content:"Análisis complementario";display:block;font-size:10px;font-weight:700;letter-spacing:.13em;color:#80927b;text-transform:uppercase;margin-bottom:7px;}
+.card {border:1px solid #dae6d8;background:var(--paper);box-shadow:0 2px 14px rgba(29,64,38,.04);padding:21px 22px;border-radius:15px;margin-bottom:18px;}
+.card-head {margin-bottom:16px;}
+.card-head h3+.tag{align-self:flex-start;}
+.card-head p {font-size:12px;color:#647565;}
+.tag{background:#eff5eb;color:#365c43;border:1px solid #d7e6d1;font-weight:700;}
+.note{background:#f1f6ed;color:#42624a;border-left-color:#88aa7c;}
+.note.warning {background:#fff7e7;border-left-color:#d8a751;color:#705729;}
+.legend-item {color:#4e6656;}
+.map-shell {border-color:#cedbce;border-radius:12px;box-shadow:inset 0 1px 2px rgba(42,63,43,.04);}
+.map-year {font-weight:700;border-radius:7px;box-shadow:0 2px 10px rgba(34,56,40,.09);}
+.map-tooltip {font-family:var(--font-ui);border-radius:11px;}
+
+/* Controles cómodos y estados accesibles. */
+.field label {font-size:12px;font-weight:700;color:#355e41;}
+.field select,.field input {height:46px;border:1px solid #c8d9c6;border-radius:9px;background:#fffefa;}
+.field select:focus-visible,.field input:focus-visible {outline-offset:2px;}
+.btn {min-height:42px;border-radius:8px;padding:10px 15px;background:#f1f7ed;border-color:#cbdcc6;font-size:12px;}
+.selection-note{border:1px solid #b9e7ed;}
+.distribution-environment{border-color:#dce7d8;background:#fcfefa;border-radius:13px;}
+.distribution-environment h4{font-family:var(--font-editorial);font-size:1.35rem;}
+.tree-card {border-top:3px solid #00b8d7;}
+.tree-label {font-size:31px;}
+.kv strong{color:#2a4d38;font-weight:700;}
+.production-kpis div{border:1px solid #e3ecdf;}
+.ndvi-stats b{font-family:var(--font-editorial);font-size:18px;}
+summary {position:relative;padding:10px 34px 10px 0;font-size:13px;font-weight:700;list-style:none;}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;position:absolute;right:9px;top:14px;transform:rotate(45deg);transition:transform .18s ease;}
+details[open]>summary::after{transform:rotate(225deg);top:18px;}
+.table-wrap {border:1px solid #e3ebe0;border-radius:9px;}
+table {font-size:12px;}
+th {background:#eef5ea;color:#28513a;}
+tr:nth-child(even) td {background:rgba(243,248,240,.43);}
+.footer{margin-top:22px;padding:22px 0 8px;color:#6b7d6d;}
+
+/* Retroalimentación sutil al interactuar (no se aplica a mapas ni gráficos). */
+@media(hover:hover) and (pointer:fine){
+  .nav button:hover:not([aria-selected="true"]) {background:rgba(255,255,255,.7);color:#285d43;}
+  .btn:hover {background:#e6f2e1;border-color:#9cba98;box-shadow:0 3px 12px rgba(30,67,41,.055);}
+  .card:has(> h3):hover {border-color:#cbdcc8;}
+  .kpi:hover {border-color:#c8dcc1;}
+}
+
+/* Transiciones por sección y revelado al hacer scroll cuando el documento sí es desplazable. */
+@keyframes editorial-enter {from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.panel:not([hidden]) {animation:editorial-enter .36s cubic-bezier(.22,.61,.36,1) both;}
+html.has-scroll-reveal .reveal-target:not(.is-visible) {opacity:0;transform:translateY(15px);}
+html.has-scroll-reveal .reveal-target {
+  transition:opacity .54s cubic-bezier(.21,.65,.3,1),transform .54s cubic-bezier(.21,.65,.3,1);
+}
+html.has-scroll-reveal .reveal-target.is-visible {opacity:1;transform:translateY(0);}
+
+/* Pantalla mediana: no se estrechan gráficas ni puntos del mapa. */
+@media(max-width:1080px){
+  .site-hero h1 {font-size:clamp(2.1rem,3.4vw,2.8rem);}
+  .kpi{padding:13px 14px;gap:11px;}.kpi strong{font-size:31px;}
+  .nav{top:5px;}
+}
+@media(max-width:760px){
+  main#app{padding:17px 14px 15px;}
+  .site-hero{padding:21px 23px 16px;}
+  .site-hero h1{font-size:2.3rem;}
+  .site-hero .brand-icon{width:63px;height:63px;border-radius:18px 18px 9px 18px;}
+  .site-hero .brand-icon svg{width:37px;height:37px;}
+  .hero-place{display:none;}
+  .hero-topic{font-size:11px;}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+  .kpi{min-height:76px;}
+  .card{padding:17px 18px;}
+  .grid2{grid-template-columns:1fr;gap:0;}
+  .tree-grid,.climate-grid{grid-template-columns:1fr;gap:0;}
+  .nav{margin-bottom:24px;}
+}
+@media(max-width:620px){
+  main#app {padding:12px 10px 15px;}
+  .site-hero {margin:0 0 14px;padding:18px 17px 14px;border-radius:15px;}
+  .site-hero::after{right:-235px;top:-90px;}
+  .hero-topline{margin-bottom:15px;}
+  .hero-topline-label{font-size:9px;letter-spacing:.028em;line-height:1.45;}
+  .hero-content{gap:11px;align-items:flex-start;}
+  .site-hero .brand-icon {width:44px;height:44px;border-radius:11px 11px 6px 11px;}
+  .site-hero .brand-icon svg {width:28px;height:28px;}
+  .site-hero .eyebrow {font-size:9px;letter-spacing:.07em;margin:0 0 6px;}
+  .site-hero h1 {font-size:clamp(1.66rem,6.9vw,2.2rem);line-height:1.12;}
+  .site-hero .subtitle{font-size:12px;line-height:1.55;margin:10px 0 0;}
+  .hero-bottom{margin-top:16px;align-items:flex-start;gap:7px;flex-wrap:wrap;}
+  .hero-topic{flex:1 1 100%;font-size:10.5px;line-height:1.6;}
+  .hero-topic span{padding:0 3px;}
+  .site-hero .version{margin-top:3px;padding:4px 9px;font-size:10px;}
+  .kpis{margin-bottom:13px;gap:8px;}
+  .kpi{min-height:72px;padding:10px 11px;gap:9px;}
+  .kpi::before{height:33px;width:2px;}
+  .kpi strong{font-size:28px;}
+  .kpi span{font-size:10.5px;line-height:1.35;}
+  .nav{grid-template-columns:repeat(2,minmax(0,1fr));border-radius:10px;margin-bottom:18px;gap:3px;top:2px;padding:4px;}
+  .nav button{gap:6px;min-height:46px;font-size:11.5px;line-height:1.15;padding:9px 5px;}
+  .nav-icon{width:15px;height:15px;}
+  .section-head{margin-bottom:15px;padding-bottom:12px;}
+  .panel>.section-head:first-child::before{font-size:9px;margin-bottom:6px;}
+  h2{font-size:1.65rem;}
+  h3{font-size:15px;}
+  .section-head p{font-size:12px;line-height:1.6;}
+  .card{padding:14px 13px;margin-bottom:13px;border-radius:12px;}
+  .card-head{align-items:flex-start;flex-wrap:wrap;}
+  .tag{font-size:10px;}
+  .distribution-environment{padding:11px;}
+  .distribution-environment h4{font-size:19px;}
+  .map-shell,.map-shell.small,.tree-grid .map-shell,.map-shell.climate {height:min(77vw,380px);min-height:305px;}
+  .field label{font-size:11px;}
+  .field select,.field input{height:47px;font-size:14px;}
+  .btn{min-height:44px;}
+  .tree-label{font-size:29px;}
+  .chart{height:340px;}
+  .chart.tall{height:385px;}
+  .chart.short{height:290px;}
+  /* Protege el comportamiento táctil de las gráficas móviles v4. */
+  .chart.mobile-static-chart {pointer-events:none;touch-action:pan-y;user-select:none;-webkit-user-select:none;}
+  .footer{padding-top:16px;}
+}
+@media(max-width:380px){
+  .site-hero h1{font-size:1.57rem;}
+  .hero-content{gap:9px;}
+  .site-hero .brand-icon{width:39px;height:39px;}
+  .nav button{font-size:11px;gap:5px;}
+  .nav-icon{width:14px;height:14px;}
+  .kpi strong{font-size:25px;}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important;}
+  .panel:not([hidden]){animation:none!important;}
+  html.has-scroll-reveal .reveal-target {opacity:1!important;transform:none!important;transition:none!important;}
+  .btn,.nav button,summary::after{transition:none!important;}
+}

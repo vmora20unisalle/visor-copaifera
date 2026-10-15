@@ -23,7 +23,7 @@ if missing:
     st.error("Faltan archivos de la actualización: " + ", ".join(missing))
     st.info("Sube la carpeta visor_web completa al mismo nivel de app.py y requirements.txt.")
     st.stop()
-visor = components.declare_component("copaifera_resultados_v4", path=str(FRONTEND))
+visor = components.declare_component("copaifera_resultados_v41", path=str(FRONTEND))
 # La selección se gestiona en el navegador y no recarga todos los mapas.
 # El componente adapta su altura mediante el protocolo oficial de Streamlit.
-visor(version="4.0.0", key="visor_copaifera_v4", default=None)
+visor(version="4.1.0", key="visor_copaifera_v41", default=None)

@@ -1,14 +1,37 @@
 # Copaifera: paisaje y sistemas ganaderos
 ## Fragmentación, efecto de borde y resultados productivos
 
-Versión **4.0.0**. Aplicación de consulta con fondo claro y títulos verdes.
+Versión **4.1.0 (UI/UX)**, basada en la versión 4 funcional. Aplicación de consulta con fondo claro y títulos verdes.
 
 **Cambio v4:** en pantallas móviles, todos los gráficos de barras, líneas y otros gráficos cartesianos quedan estáticos para evitar zoom o desplazamiento accidental al tocar con uno o dos dedos. Los gráficos de torta conservan su interacción. La versión de escritorio mantiene el comportamiento anterior.
+
+**La edición 4.1 mantiene esa protección móvil.**
 Esta actualización conserva las capas, geometrías y tablas de la versión 2.
+
+
+## Identidad visual y accesibilidad · v4.1
+
+**Edición visual sobre la versión 4, sin cambiar datos, capas ni fórmulas.**
+
+- Se conservaron los verdes, naranjas y las leyendas cartográficas. La cabecera tiene una presentación editorial vinculada con vegetación y territorio; las tarjetas y menús recibieron ajustes discretos.
+- Nueva tipografía **Fraunces** para títulos y **DM Sans** para interfaz y gráficos, cargadas mediante Google Fonts. Si no hay conexión a ese servicio, se utilizan Georgia y las fuentes locales de respaldo. No se incluye ni distribuye ningún archivo de fuente.
+- Los iconos de navegación y las etiquetas de sección facilitan explorar Paisaje, Árboles y producción, Patrones NDVI, y Clima y forraje.
+- Animaciones suaves al cambiar de sección y revelado progresivo de bloques conforme entran en el área visible, también dentro del iframe de Streamlit. Si el navegador solicita movimiento reducido o no admite IntersectionObserver, el contenido se muestra sin ocultarse.
+- Se respetan `prefers-reduced-motion`, focos visibles, botones de al menos 44 px en móvil y navegación por teclado con flechas/Inicio/Fin entre pestañas.
+- Se conservan los gráficos cartesianos **no interactivos en móviles**, las tortas interactivas y el comportamiento original de mapas, selecciones, zoom y comparadores.
+
+### Archivos visuales nuevos
+
+- `visor_web/ui-refinements.css`: nuevas reglas en capa, sin sustituir `style.css`.
+- `visor_web/experiencia.js`: animaciones y navegación por teclado.
+
+Para actualizar la app existente, sobrescribe **todo el contenido** de la versión previa con este paquete en la misma raíz del repositorio. No necesitas crear un Streamlit nuevo ni cambiar el QR; no renombres la carpeta `visor_web`.
+
+La dirección publicada no se modifica, pero este ZIP **no se despliega automáticamente**: debe subirse al repositorio de la app.
 
 ## Actualizar el visor que ya está publicado
 
-1. Descomprime `Visor_Copaifera_Actualizado_v4.zip`.
+1. Descomprime `Visor_Copaifera_UIX_v4_1.zip`.
 2. Abre el repositorio `vmora20unisalle/visor-copaifera`, en la rama `main`.
 3. Pulsa **Add file → Upload files**.
 4. Sube el contenido descomprimido del paquete. `app.py`, `requirements.txt`, `data/` y `visor_web/` deben quedar al mismo nivel, sin una carpeta adicional encima.
@@ -77,6 +100,8 @@ data/                   # tablas y geometrías originales convertidas
 visor_web/
   index.html
   style.css
+  ui-refinements.css
+  experiencia.js
   mapas.js
   interfaz.js
   datos.js
@@ -117,7 +142,7 @@ Al cambiar los CSV posteriormente, se puede ejecutar `python tools/sincronizar_t
 - Interfaz revisada en Chromium a 360, 390, 768 y 1440 píxeles.
 - Fallo del proveedor y retorno a un nivel anterior de teselas simulados para probar el código.
 
-**La conectividad real a Esri no se pudo verificar desde el entorno de pruebas.** Las pruebas cartográficas utilizaron los datos temáticos reales, con respuestas externas simuladas. Debe comprobarse el fondo satelital en el enlace de Streamlit tras actualizarlo. Este paquete no modifica por sí mismo el repositorio ni el despliegue.
+**La conectividad real a Esri no se pudo verificar desde el entorno de pruebas de la versión 4.** Las pruebas cartográficas utilizaron los datos temáticos reales, con respuestas externas simuladas. Debe comprobarse el fondo satelital en el enlace de Streamlit tras actualizarlo. Este paquete no modifica por sí mismo el repositorio ni el despliegue.
 
 ## Referencias técnicas
 
