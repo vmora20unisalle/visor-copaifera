@@ -9,11 +9,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=4.1.0">
-<link rel="stylesheet" href="ui-refinements.css?v=4.1.0">
+<link rel="stylesheet" href="ui-refinements.css?v=4.2.3-forraje-20261017">
 <script src="datos.js?v=4.2.1-datos-20261016"></script>
 <script src="vendor/plotly.min.js" defer></script>
 <script src="mapas.js?v=4.1.0" defer></script>
-<script src="interfaz.js?v=4.2.2-produccion-20261016" defer></script>
+<script src="interfaz.js?v=4.2.3-forraje-20261017" defer></script>
 <script src="experiencia.js?v=4.1.0" defer></script>
 </head><body>
 <main id="app">
@@ -63,7 +63,7 @@
 <div class="note warning" style="margin-bottom:18px">Los registros de precipitación marcados para revisión se conservan para consulta, pero quedan excluidos del climograma. El año 2025 se mantiene como año de referencia de la base climática.</div>
 <div class="card"><div class="card-head"><h3>Variación mensual del microclima</h3></div><div class="field"><label for="climate-var">Variable</label><select id="climate-var"><option value="TEMPERATURA_C">Temperatura (°C)</option><option value="HUMEDAD_PCT">Humedad relativa (%)</option><option value="ITH_CALCULADO">ITH calculado</option><option value="RAFA">RAFA — unidad por confirmar</option></select></div><div id="chart-climate" class="chart"></div><p class="stats-note">Datos climáticos provisionales, pendientes de la versión final. Son cuatro puntos de referencia, no mediciones independientes para los 45 árboles. ITH es un índice calculado con temperatura y humedad. Se conserva el nombre RAFA de la base; su unidad debe confirmarse con el proyecto.</p><details><summary>Datos climáticos y precipitación</summary><div id="table-climate" class="table-wrap"></div><div id="table-rain" class="table-wrap"></div><div class="download-row"><button class="btn" data-download="clima_2025">Descargar clima</button><button class="btn" data-download="precipitacion">Descargar precipitación con observaciones</button></div></details></div>
 <div class="section-head section-rule"><h2>Forraje y caracterización bromatológica</h2><p>Aforos de pasto en abierto y bajo árbol; composición de las tres muestras aportadas por el proyecto.</p></div>
-<div class="grid2"><div class="card"><h3>Aforos de forraje</h3><div id="chart-forage" class="chart"></div><p class="stats-note">Medias suministradas en g/m². Son diez períodos observados entre 2025 y 2026; no se ha confirmado la base de peso fresco o seco.</p></div><div class="card"><h3>Caracterización bromatológica</h3><div class="field" style="margin-top:12px"><label for="brom-var">Variable de calidad</label><select id="brom-var"></select></div><div id="chart-quality" class="chart short"></div></div></div>
+<div class="grid2 forage-grid"><div class="card"><h3>Aforos de forraje</h3><div id="chart-forage" class="chart"></div><p class="stats-note">Medias suministradas en g/m². Son diez períodos observados entre 2025 y 2026; no se ha confirmado la base de peso fresco o seco.</p></div><div class="card"><h3>Caracterización bromatológica</h3><div class="field" style="margin-top:12px"><label for="brom-var">Variable de calidad</label><select id="brom-var"></select></div><div id="chart-quality" class="chart short"></div></div></div>
 <div class="card"><p class="note">La comparación de calidad del <b>pasto Humidicola</b> es sombra frente a pleno sol. La fila <b>Copaiba</b> se conserva como caracterización independiente; no se presenta como pasto ni como alimento para el ganado. Se muestran las medias suministradas para cada condición.</p><details><summary>Consultar las tres condiciones y los aforos</summary><div id="table-quality" class="table-wrap"></div><div id="table-forage" class="table-wrap"></div><div class="download-row"><button class="btn" data-download="calidad_forraje">Descargar bromatología completa</button><button class="btn" data-download="aforos_forraje">Descargar aforos</button></div></details></div>
 </section>
 <footer class="footer"><span>Universidad de La Salle · Modalidad de grado · <i>Copaifera pubiflora</i></span><span>Datos del proyecto · Consulta de resultados</span></footer>

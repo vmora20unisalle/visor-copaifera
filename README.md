@@ -1,13 +1,20 @@
 # Copaifera: paisaje y sistemas ganaderos
 ## Fragmentación, efecto de borde y resultados productivos
 
-Versión **4.2.2 (totales y detalle de producción; diseño 4.1)**, basada en la versión 4 funcional. Aplicación de consulta con fondo claro y títulos verdes.
+Versión **4.2.3 (espaciado de aforos; diseño 4.1)**, basada en la versión 4 funcional. Aplicación de consulta con fondo claro y títulos verdes.
 
 **Cambio v4:** en pantallas móviles, todos los gráficos de barras, líneas y otros gráficos cartesianos quedan estáticos para evitar zoom o desplazamiento accidental al tocar con uno o dos dedos. Los gráficos de torta conservan su interacción. La versión de escritorio mantiene el comportamiento anterior.
 
 **La edición 4.1 mantiene esa protección móvil.**
 La presentación de la versión 4.1 se conserva. Los datos actualizados se describen a continuación.
 
+
+## Espaciado de aforos · 16 de octubre de 2026
+
+- Aforos ocupa aproximadamente dos tercios de la fila y la gráfica de bromatología el espacio restante; en pantallas de hasta 980 px se apilan.
+- Los diez meses observados conservan su posición temporal. Mes y año se muestran en dos líneas; cuando el gráfico tiene menos de 520 px, las fechas giran para ganar separación.
+- Se aumenta la altura de aforos y se reserva espacio para el título del eje y la leyenda. Los valores, colores y fuentes se conservan.
+- Verificación de código y datos; pendiente comprobación visual en el visor publicado.
 
 ## Totales y productores por muestreo · 16 de octubre de 2026
 

@@ -1,5 +1,5 @@
 {
-  "version": "4.2.2-produccion-20261016",
+  "version": "4.2.3-forraje-20261017",
   "browser_visual_run": false,
   "note": "Validación actual de datos e interfaz en Node; las verificaciones de navegador del paquete anterior son históricas.",
   "environment": "Node VM con adaptadores de DOM, mapa y Plotly; comprueba ejecución y datos, no renderizado visual.",
@@ -39,5 +39,13 @@
       "browser_render": false
     }
   },
-  "version_datos": "4.2.1-datos-20261016"
+  "version_datos": "4.2.1-datos-20261016",
+  "espaciado_forraje": {
+    "columnas_escritorio": "1.9fr / mínimo 300px, 1fr",
+    "apilado_hasta_px": 980,
+    "etiquetas_verticales_si_grafica_menor_px": 520,
+    "periodos_conservados": 10,
+    "datos_modificados": false,
+    "browser_render": false
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "version": "4.2.2-produccion-20261016",
+  "version": "4.2.3-forraje-20261017",
   "source": "MODALIDAD_GRADO.gdb(1).zip",
   "n_arboles": 45,
   "n_produccion": 405,
@@ -28,7 +28,6 @@
   "capas_paisaje": "Se conservan las representaciones previas. Los atributos de las capas suministradas coinciden con los del visor.",
   "archivos_presentacion_sin_cambios": {
     "visor_web/style.css": "ceb2e5452c1a201a963181a59494753e98595e908b58c0af8b4f09d6cf5aab03",
-    "visor_web/ui-refinements.css": "d49d33a479f61764e255f3956f54c66a5b6a6ff50c0d465610130f7731e656bc",
     "visor_web/experiencia.js": "4b8a0df653114206939463e5f1f11554282022d19cfa03e15728ade8ed9af310",
     "visor_web/mapas.js": "0dcf162060a9f9c18925dcd34b14a00861ad09175f03f3d34a557116804d9e22",
     "PALETAS_VISOR.json": "6865ca78d9e72e7a2849e723a34ebb8a6c0d87221d3cc9b99fab22a0825a7015"
@@ -36,7 +35,6 @@
   "valores_climaticos_pendientes_validacion": true,
   "validacion_final": {
     "estructura_html_igual_al_ultimo_encabezado": false,
-    "css_fuentes_paletas_y_animaciones_identicos": true,
     "imagenes_cartograficas_identicas": true,
     "clima_precipitacion_y_puntos_identicos": true,
     "csv_y_bundle_coinciden": true,
@@ -47,7 +45,9 @@
     "estructura_previa_conservada_mas_grafica_productores": true,
     "datos_sin_modificacion_desde_actualizacion_anterior": true,
     "36_totales_ambiente_muestreo_producto_comprobados": true,
-    "18_detalles_muestreo_producto_comprobados": true
+    "18_detalles_muestreo_producto_comprobados": true,
+    "fuentes_paletas_y_animaciones_identicas": true,
+    "ajuste_css_limitado_a_aforos_y_ancho_bromatologia": true
   },
   "version_datos": "4.2.1-datos-20261016",
   "produccion_muestreo_1": {

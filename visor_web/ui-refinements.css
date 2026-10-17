@@ -254,3 +254,16 @@ html.has-scroll-reveal .reveal-target.is-visible {opacity:1;transform:translateY
   html.has-scroll-reveal .reveal-target {opacity:1!important;transform:none!important;transition:none!important;}
   .btn,.nav button,summary::after{transition:none!important;}
 }
+
+/* Más espacio para los diez períodos de aforo y una tarjeta de calidad compacta. */
+.grid2.forage-grid {
+  grid-template-columns:minmax(0,1.9fr) minmax(300px,1fr);
+  gap:24px;
+}
+#chart-forage {height:390px;}
+@media(max-width:980px){
+  .grid2.forage-grid {grid-template-columns:minmax(0,1fr);gap:0;}
+}
+@media(max-width:620px){
+  #chart-forage {height:370px;}
+}
