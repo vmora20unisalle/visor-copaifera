@@ -1,8 +1,8 @@
 ﻿bloque,indicador,detalle,estadistico,p
-Producción,Aceite Bosque vs Potrero,Mediana Bosque 0 mL; Potrero 10 mL,Mann–Whitney U=146.5,0.018953
-Producción,Resina Bosque vs Potrero,Mediana Bosque 27.5 mL; Potrero 30 mL,Mann–Whitney U=213.5,0.788489
-Producción temporal,Cambio temporal de aceite,7 muestreos,Friedman=35.261,4e-06
-Producción temporal,Cambio temporal de resina,7 muestreos,Friedman=38.167,1e-06
-Borde-NDVI,NDVI histórico medio vs distancia al borde,45 árboles,Spearman ρ=0.711,4.357658e-08
-Clima,RAFA vs % productores de aceite (sin referencia Árbol),Análisis exploratorio,Spearman ρ=0.761,0.000248
-Forraje,Aforo abierto vs bajo árbol,Promedios 688.3 vs 418.3 g/m²,Wilcoxon W=1.0,0.03125
+Producción,Aceite Bosque vs Potrero,Mediana Bosque 5 mL; Potrero 0 mL; acumulado de 9 muestreos,Mann–Whitney U=337.5,0.0013074271432251283
+Producción,Resina Bosque vs Potrero,Mediana Bosque 42.5 mL; Potrero 25 mL; acumulado de 9 muestreos,Mann–Whitney U=258.5,0.4241629871239948
+Producción temporal,Cambio temporal de aceite,"45 árboles; 9 muestreos, febrero de 2025 a junio de 2026",Friedman=39.774,3.530200407847871e-06
+Producción temporal,Cambio temporal de resina,"45 árboles; 9 muestreos, febrero de 2025 a junio de 2026",Friedman=50.446,3.3551835115534194e-08
+Borde-NDVI,NDVI histórico medio vs distancia al borde,45 árboles; etiquetas y NDVI actualizados,Spearman ρ=0.754,2.1717091750986085e-09
+Clima,RAFA vs % productores de aceite (sin referencia Árbol),Pendiente de la versión climática final y de su correspondencia temporal con los nueve muestreos,,
+Forraje,Aforo abierto vs bajo árbol,Promedios 678.24 vs 455.00 g/m²; 10 períodos emparejados por año y mes,Wilcoxon W=1,0.00390625

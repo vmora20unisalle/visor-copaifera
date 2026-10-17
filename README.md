@@ -1,13 +1,29 @@
 # Copaifera: paisaje y sistemas ganaderos
 ## Fragmentación, efecto de borde y resultados productivos
 
-Versión **4.1.0 (UI/UX)**, basada en la versión 4 funcional. Aplicación de consulta con fondo claro y títulos verdes.
+Versión **4.2.1 (datos actualizados; diseño 4.1)**, basada en la versión 4 funcional. Aplicación de consulta con fondo claro y títulos verdes.
 
 **Cambio v4:** en pantallas móviles, todos los gráficos de barras, líneas y otros gráficos cartesianos quedan estáticos para evitar zoom o desplazamiento accidental al tocar con uno o dos dedos. Los gráficos de torta conservan su interacción. La versión de escritorio mantiene el comportamiento anterior.
 
 **La edición 4.1 mantiene esa protección móvil.**
-Esta actualización conserva las capas, geometrías y tablas de la versión 2.
+La presentación de la versión 4.1 se conserva. Los datos actualizados se describen a continuación.
 
+
+## Actualización de datos · 16 de octubre de 2026
+
+Se incorpora la GDB corregida y el último encabezado enviado. Se conservan el diseño, los colores, las fuentes, las animaciones y las capas de paisaje existentes.
+
+- 45 árboles: unión por etiqueta de caracterización, coordenadas, distancia al borde y NDVI.
+- 405 registros: nueve muestreos del 5/02/2025 al 4/06/2026; totales comprobados de 3560 mL de aceite y 5032 mL de resina.
+- 450 observaciones NDVI: diez fechas por árbol. En la GDB, la columna de desviación estaba pegada en orden alfabético mientras las filas seguían orden numérico. Se restituyeron por etiqueta los 29 valores cruzados. La tabla `data/revision_ndvi_desviacion.csv` conserva los valores de la GDB y los validados. La GDB adjunta no se modifica.
+- Clima y precipitación: se conservan los valores actuales. La relación usa `AMBIENTES_CLIMA.Dataloger` con `CLIMA_2025_.REF_CLIMA`. El año y los valores climáticos siguen pendientes de confirmación.
+- Aforos: diez períodos separados por año y mes. Calidad: tres condiciones, con las 15 variables de la GDB, incluido sodio y NDT.
+- `data/penetrometro.csv` conserva la tabla recibida; no se añade una sección nueva al visor.
+- Se actualizan las pruebas que ya figuraban en el visor: Mann–Whitney sobre el total por árbol (bilateral, corrección de empates y continuidad), Friedman sobre los nueve muestreos de los mismos 45 árboles, Spearman borde–NDVI y Wilcoxon de los diez pares de aforos. La asociación clima–producción queda pendiente de la versión climática final.
+
+Los volúmenes vacíos se mantienen vacíos en la descarga. Para gráficos y cálculos, únicamente se interpreta ausencia de un producto cuando la categoría de la GDB lo declara: «Sin producción», «Aceite» o «Resina». No se sustituyen otros faltantes por cero. Estos resúmenes son observacionales y no equivalen a inferencia causal.
+
+La comprobación de esta actualización cubre datos, uniones, sumas, series y ejecución de la interfaz con un entorno de prueba. No se repitió una prueba visual en navegador ni la conexión al proveedor satelital. Las pruebas visuales descritas más abajo corresponden a la versión anterior.
 
 ## Identidad visual y accesibilidad · v4.1
 
@@ -54,7 +70,7 @@ Esto no añade resolución a la imagen. Los puntos y los polígonos siguen dibuj
 
 Se eliminó el gráfico **Resultado por muestreo** del individuo.
 
-En su lugar se presentan **dos tortas de anillo**, una para Bosque y otra para Potrero. Un selector permite elegir uno de los siete muestreos. Cada torta muestra el número de individuos y el porcentaje de cada categoría dentro de su ambiente:
+En su lugar se presentan **dos tortas de anillo**, una para Bosque y otra para Potrero. Un selector permite elegir uno de los nueve muestreos. Cada torta muestra el número de individuos y el porcentaje de cada categoría dentro de su ambiente:
 
 - Aceite: volumen de aceite mayor que cero y resina igual a cero.
 - Resina: volumen de resina mayor que cero y aceite igual a cero.
@@ -124,7 +140,7 @@ En Windows se puede usar `iniciar_visor.bat`. No se necesita ArcGIS. También se
 
 ## Datos y alcance
 
-Se conservan los 45 árboles, 315 registros productivos, 450 observaciones NDVI, 48 registros climáticos, coberturas, estados ecológicos, transiciones, aforos y las tres muestras bromatológicas, incluida Copaiba. No se recalcularon pruebas estadísticas.
+Se conservan los 45 árboles, 405 registros productivos, 450 observaciones NDVI, 48 registros climáticos, coberturas, estados ecológicos, transiciones, aforos y las tres muestras bromatológicas, incluida Copaiba. Las pruebas existentes se actualizan según lo documentado al inicio.
 
 Se conservan también las observaciones sobre precipitación pendiente de revisión, las unidades pendientes de confirmación y el carácter de referencia de los puntos climáticos. El material Copaiba no se presenta como pasto ni como alimento para ganado.
 
@@ -132,7 +148,7 @@ Los patrones emergentes son agrupamientos estadísticos relativos de NDVI, no ca
 
 Al cambiar los CSV posteriormente, se puede ejecutar `python tools/sincronizar_tablas.py` para actualizar su copia de consulta `datos.js`. No modifica las imágenes cartográficas.
 
-## Verificación realizada
+## Verificación histórica de la interfaz (anterior a esta actualización)
 
 - Sintaxis JavaScript y Python validada.
 - Tortas verificadas en los siete muestreos: conteos 30/15 y porcentajes que suman 100 % por ambiente.

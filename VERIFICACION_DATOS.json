@@ -1,65 +1,48 @@
 {
-  "source": "MODALIDAD_GRADO.gdb",
-  "coverage_different": true,
-  "render_crs": "EPSG:3857",
-  "image_shape": [
-    3072,
-    2399
-  ],
-  "pixel_size_m": [
-    6.07192823651106,
-    6.07122114970196
-  ],
-  "note": "Verificación técnica de imágenes distintas; no se recalculó la matriz de transición del proyecto.",
-  "ecological_state_source": "ESTADO_ECOLOGICO de cada capa original, no reclasificado",
-  "files": {
-    "cobertura_2018": "fa511fccff6f64cafaa7cae635f6e95f0b67fe05ba3b87c03b0982338d6e03c3",
-    "cobertura_2023": "14c2adec7e214eb4b93396b7b5781d472090480ab826c1a41d08884da8db9b56",
-    "estado_2018": "32b61d362d48aa043ae27c90d122f5ae3b66ef3f285585703aee95580cbfd18b",
-    "estado_2023": "3b7e54ebad02652ea4eef452053fc2039ef62679c3a5b39a8f01de1d70d5d40f",
-    "patrones_ndvi": "0bc55a360713784c9b5a062680d7e870078fc3e6e2138604e68afe3efe9121c0"
+  "version": "4.2.1-datos-20261016",
+  "source": "MODALIDAD_GRADO.gdb(1).zip",
+  "n_arboles": 45,
+  "n_produccion": 405,
+  "n_muestreos": 9,
+  "n_ndvi": 450,
+  "n_clima": 48,
+  "n_referencias_clima": 4,
+  "n_aforos": 20,
+  "n_periodos_aforo": 10,
+  "n_condiciones_calidad": 3,
+  "totales_ml": {
+    "aceite": 3560,
+    "resina": 5032
   },
-  "version": "3.0.0",
-  "palette_reference": "Leyendas de 1001358812.jpg, 1001358814.jpg y 1001358816.jpg; colores RGB tomados del interior de las muestras JPEG.",
-  "recolor_checks": {
-    "cobertura_2018": {
-      "Bosque": 1018356,
-      "Herbazal": 1317849,
-      "Cultivos": 420071,
-      "Sin cobertura": 285573,
-      "Sin Cobertura": 285573,
-      "Agua": 52446,
-      "Vegetación Mixta": 0
-    },
-    "cobertura_2023": {
-      "Bosque": 1175458,
-      "Herbazal": 984044,
-      "Cultivos": 217980,
-      "Sin cobertura": 275376,
-      "Sin Cobertura": 275376,
-      "Agua": 0,
-      "Vegetación Mixta": 441397
-    },
-    "estado_2018": {
-      "Bueno": 2756276,
-      "Regular": 52446,
-      "Deficiente": 285573
-    },
-    "estado_2023": {
-      "Bueno": 1175458,
-      "Regular": 1918797,
-      "Deficiente": 0
-    },
-    "patrones_ndvi": {
-      "Diminishing Cold Spot": 29340,
-      "Intensifying Cold Spot": 2173,
-      "No Pattern Detected": 43290,
-      "Oscillating Cold Spot": 1274201,
-      "Oscillating Hot Spot": 1306660,
-      "Persistent Cold Spot": 90918,
-      "Sporadic Cold Spot": 13129
-    }
+  "ndvi_desviaciones_corregidas": 29,
+  "clima_conservado": true,
+  "vacios_volumen_conservados": {
+    "aceite": 339,
+    "resina": 266
   },
-  "thematic_geometries_changed": false,
-  "raw_data_changed": false
+  "relacion_clima": {
+    "origen": "AMBIENTES_CLIMA.Dataloger",
+    "destino": "CLIMA_2025_.REF_CLIMA",
+    "cardinalidad": "1:N"
+  },
+  "capas_paisaje": "Se conservan las representaciones previas. Los atributos de las capas suministradas coinciden con los del visor.",
+  "archivos_presentacion_sin_cambios": {
+    "visor_web/style.css": "ceb2e5452c1a201a963181a59494753e98595e908b58c0af8b4f09d6cf5aab03",
+    "visor_web/ui-refinements.css": "d49d33a479f61764e255f3956f54c66a5b6a6ff50c0d465610130f7731e656bc",
+    "visor_web/experiencia.js": "4b8a0df653114206939463e5f1f11554282022d19cfa03e15728ade8ed9af310",
+    "visor_web/mapas.js": "0dcf162060a9f9c18925dcd34b14a00861ad09175f03f3d34a557116804d9e22",
+    "PALETAS_VISOR.json": "6865ca78d9e72e7a2849e723a34ebb8a6c0d87221d3cc9b99fab22a0825a7015"
+  },
+  "valores_climaticos_pendientes_validacion": true,
+  "validacion_final": {
+    "estructura_html_igual_al_ultimo_encabezado": true,
+    "css_fuentes_paletas_y_animaciones_identicos": true,
+    "imagenes_cartograficas_identicas": true,
+    "clima_precipitacion_y_puntos_identicos": true,
+    "csv_y_bundle_coinciden": true,
+    "uniones_por_etiqueta_completas": true,
+    "totales_productivos_coinciden": true,
+    "geometria_y_atributos_de_arboles_coinciden": true,
+    "registros_productivos_vacios_conservados": true
+  }
 }

@@ -1,95 +1,34 @@
 {
-  "environment": "Chromium local con teselas externas simuladas. Las imágenes temáticas y datos son los archivos reales del visor.",
-  "live_esri_access_verified": false,
+  "version": "4.2.1-datos-20261016",
+  "browser_visual_run": false,
+  "note": "Validación actual de datos e interfaz en Node; las verificaciones de navegador del paquete anterior son históricas.",
+  "environment": "Node VM con adaptadores de DOM, mapa y Plotly; comprueba ejecución y datos, no renderizado visual.",
   "checks": {
-    "version": "3.0.0",
-    "coverage_swipe_distinct": true,
-    "ecology_swipe_distinct": true,
-    "distribution_all_7_counts_and_percentages": true,
-    "tree_individual_chart_and_pies_independent": true,
-    "tree_visual_zoom": 19.7,
-    "tree_imagery_native_zoom": 18,
-    "pattern_pie_all_7_categories_and_matching_palette": true,
-    "climate_views": {
-      "Bosque": {
-        "zoom": 15.504027883329218,
-        "scale": 100,
-        "native": 15,
-        "w": 554,
-        "h": 393,
-        "paths": 1
-      },
-      "Bosquete": {
-        "zoom": 18.48405431217007,
-        "scale": 20,
-        "native": 18,
-        "w": 554,
-        "h": 393,
-        "paths": 1
-      },
-      "Árbol": {
-        "zoom": 18.48406919474555,
-        "scale": 20,
-        "native": 18,
-        "w": 554,
-        "h": 393,
-        "paths": 1
-      },
-      "Abierto": {
-        "zoom": 18.484062510612013,
-        "scale": 20,
-        "native": 18,
-        "w": 554,
-        "h": 393,
-        "paths": 1
-      }
+    "desktop": {
+      "trees_exercised": 45,
+      "samples_exercised": 9,
+      "distributions_checked": 18,
+      "climate_references": 4,
+      "climate_variables": 4,
+      "quality_variables": 15,
+      "forage_periods": 10,
+      "download_buttons": 10,
+      "chart_functions": 12,
+      "runtime_errors": 0,
+      "browser_render": false
     },
-    "no_overflow_360_paisaje": true,
-    "no_overflow_360_arboles": true,
-    "no_overflow_360_ndvi": true,
-    "no_overflow_360_clima": true,
-    "no_overflow_390_paisaje": true,
-    "no_overflow_390_arboles": true,
-    "no_overflow_390_ndvi": true,
-    "no_overflow_390_clima": true,
-    "no_overflow_768_paisaje": true,
-    "no_overflow_768_arboles": true,
-    "no_overflow_768_ndvi": true,
-    "no_overflow_768_clima": true,
-    "no_esri_requests_above_18": true,
-    "imagery_fallback_17_on_18_http_failure": true,
-    "external_network_failure_graceful": true,
-    "data_files_byte_identical_to_v2": [
-      "data/aforos_forraje.csv",
-      "data/ambientes_clima.csv",
-      "data/ambientes_clima.geojson",
-      "data/arboles.csv",
-      "data/arboles.geojson",
-      "data/calidad_forraje.csv",
-      "data/clima_2025.csv",
-      "data/cobertura_2018.geojson",
-      "data/cobertura_2023.geojson",
-      "data/matriz_transicion.csv",
-      "data/metadata.json",
-      "data/metricas_paisaje.csv",
-      "data/ndvi_copa_tiempo.csv",
-      "data/patrones_ndvi.geojson",
-      "data/patrones_resumen.csv",
-      "data/poligonos_borde.geojson",
-      "data/precipitacion.csv",
-      "data/produccion.csv",
-      "data/resultados_clave.csv",
-      "data/zona_estudio.geojson"
-    ],
-    "python_syntax": true,
-    "javascript_syntax": true
-  },
-  "screenshots": [
-    "produccion_tortas_mobile.png",
-    "ndvi_mobile.png",
-    "ndvi_desktop.png",
-    "clima_bosque_desktop.png",
-    "produccion_tortas_desktop.png"
-  ],
-  "javascript_errors": []
+    "mobile": {
+      "trees_exercised": 45,
+      "samples_exercised": 9,
+      "distributions_checked": 18,
+      "climate_references": 4,
+      "climate_variables": 4,
+      "quality_variables": 15,
+      "forage_periods": 10,
+      "download_buttons": 10,
+      "chart_functions": 12,
+      "runtime_errors": 0,
+      "browser_render": false
+    }
+  }
 }
