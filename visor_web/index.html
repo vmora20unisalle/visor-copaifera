@@ -13,7 +13,7 @@
 <script src="datos.js?v=4.2.1-datos-20261016"></script>
 <script src="vendor/plotly.min.js" defer></script>
 <script src="mapas.js?v=4.1.0" defer></script>
-<script src="interfaz.js?v=4.2.1-datos-20261016" defer></script>
+<script src="interfaz.js?v=4.2.2-produccion-20261016" defer></script>
 <script src="experiencia.js?v=4.1.0" defer></script>
 </head><body>
 <main id="app">
@@ -43,8 +43,12 @@
 <div class="selectors"><div class="field grow"><label for="distribution-sample">Muestreo para comparar Bosque y Potrero</label><select id="distribution-sample"></select></div><button id="download-distribution" class="btn">Descargar conteos</button></div>
 <div class="distribution-grid"><section class="distribution-environment"><div class="card-head"><h4>Bosque</h4><span class="tag" id="distribution-n-bosque"></span></div><div id="chart-dist-bosque" class="chart pie-chart" aria-label="Distribución de individuos en Bosque"></div><div id="legend-dist-bosque" class="distribution-legend"></div></section><section class="distribution-environment"><div class="card-head"><h4>Potrero</h4><span class="tag" id="distribution-n-potrero"></span></div><div id="chart-dist-potrero" class="chart pie-chart" aria-label="Distribución de individuos en Potrero"></div><div id="legend-dist-potrero" class="distribution-legend"></div></section></div>
 <p class="stats-note">Cada árbol se cuenta una sola vez por muestreo. Los porcentajes se calculan dentro de cada ambiente. «Aceite y resina» significa que registró ambos en ese muestreo. Esta comparación general no cambia al seleccionar un árbol individual.</p></div>
-<div class="section-head section-rule"><h2>Bosque y Potrero</h2><p>Comparación general del promedio por árbol. Estos gráficos no cambian al seleccionar un individuo; incluyen los ceros registrados.</p></div>
-<div class="grid2"><div class="card"><h3>Aceite promedio por árbol</h3><div id="chart-avg-aceite" class="chart"></div></div><div class="card"><h3>Resina promedio por árbol</h3><div id="chart-avg-resina" class="chart"></div></div></div>
+<div class="card" id="producer-volume-panel"><div class="card-head"><div><h3>Producción por árbol en el muestreo</h3><p>Cada barra muestra el volumen de un árbol que produjo el producto elegido</p></div><span class="tag" id="producer-sample-label"></span></div>
+<div class="selectors"><div class="field grow"><label for="producer-product">Producto</label><select id="producer-product"><option value="ACEITE_ML">Aceite</option><option value="RESINA_ML">Resina</option></select></div><button class="btn" id="download-producers">Descargar productores</button></div>
+<p class="stats-note" id="producer-volume-summary" aria-live="polite"></p><div id="chart-producer-volume" class="chart" aria-label="Volumen producido por cada árbol en el muestreo seleccionado"></div>
+<p class="stats-note">Usa el muestreo seleccionado en las tortas. Se incluyen los árboles con volumen mayor que cero del producto elegido, también si produjeron ambos productos.</p><details><summary>Consultar volúmenes por árbol</summary><div id="table-producers" class="table-wrap"></div></details></div>
+<div class="section-head section-rule"><h2>Bosque y Potrero</h2><p>Suma de los volúmenes registrados en cada ambiente y muestreo. Son 30 árboles en Bosque y 15 en Potrero. Estos gráficos no cambian al seleccionar un individuo.</p></div>
+<div class="grid2"><div class="card"><h3>Aceite total por muestreo</h3><div id="chart-avg-aceite" class="chart"></div></div><div class="card"><h3>Resina total por muestreo</h3><div id="chart-avg-resina" class="chart"></div></div></div>
 <div class="card"><details><summary>Consultar análisis realizados y base de árboles</summary><div id="stats-production" class="table-wrap"></div><p class="stats-note">Resultados observacionales. Una asociación estadística no demuestra causalidad. La ficha conserva los resultados y las unidades suministrados.</p><div class="download-row"><button class="btn" data-download="arboles">Descargar caracterización</button><button class="btn" data-download="produccion">Descargar todos los muestreos</button></div></details></div>
 </section>
 <section id="ndvi" class="panel" role="tabpanel" aria-labelledby="tab-ndvi" hidden>

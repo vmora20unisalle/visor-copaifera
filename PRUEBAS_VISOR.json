@@ -1,5 +1,5 @@
 {
-  "version": "4.2.1-datos-20261016",
+  "version": "4.2.2-produccion-20261016",
   "browser_visual_run": false,
   "note": "Validación actual de datos e interfaz en Node; las verificaciones de navegador del paquete anterior son históricas.",
   "environment": "Node VM con adaptadores de DOM, mapa y Plotly; comprueba ejecución y datos, no renderizado visual.",
@@ -12,8 +12,12 @@
       "climate_variables": 4,
       "quality_variables": 15,
       "forage_periods": 10,
-      "download_buttons": 10,
-      "chart_functions": 12,
+      "download_buttons": 13,
+      "chart_functions": 13,
+      "producer_views_checked": 18,
+      "general_totals_checked": 36,
+      "positive_producers_only": true,
+      "selected_tree_does_not_change_group": true,
       "runtime_errors": 0,
       "browser_render": false
     },
@@ -25,10 +29,15 @@
       "climate_variables": 4,
       "quality_variables": 15,
       "forage_periods": 10,
-      "download_buttons": 10,
-      "chart_functions": 12,
+      "download_buttons": 13,
+      "chart_functions": 13,
+      "producer_views_checked": 18,
+      "general_totals_checked": 36,
+      "positive_producers_only": true,
+      "selected_tree_does_not_change_group": true,
       "runtime_errors": 0,
       "browser_render": false
     }
-  }
+  },
+  "version_datos": "4.2.1-datos-20261016"
 }

@@ -1,5 +1,5 @@
 {
-  "version": "4.2.1-datos-20261016",
+  "version": "4.2.2-produccion-20261016",
   "source": "MODALIDAD_GRADO.gdb(1).zip",
   "n_arboles": 45,
   "n_produccion": 405,
@@ -35,7 +35,7 @@
   },
   "valores_climaticos_pendientes_validacion": true,
   "validacion_final": {
-    "estructura_html_igual_al_ultimo_encabezado": true,
+    "estructura_html_igual_al_ultimo_encabezado": false,
     "css_fuentes_paletas_y_animaciones_identicos": true,
     "imagenes_cartograficas_identicas": true,
     "clima_precipitacion_y_puntos_identicos": true,
@@ -43,6 +43,25 @@
     "uniones_por_etiqueta_completas": true,
     "totales_productivos_coinciden": true,
     "geometria_y_atributos_de_arboles_coinciden": true,
-    "registros_productivos_vacios_conservados": true
+    "registros_productivos_vacios_conservados": true,
+    "estructura_previa_conservada_mas_grafica_productores": true,
+    "datos_sin_modificacion_desde_actualizacion_anterior": true,
+    "36_totales_ambiente_muestreo_producto_comprobados": true,
+    "18_detalles_muestreo_producto_comprobados": true
+  },
+  "version_datos": "4.2.1-datos-20261016",
+  "produccion_muestreo_1": {
+    "Bosque": {
+      "aceite_ml": 950,
+      "productores_aceite": 9,
+      "resina_ml": 1340,
+      "productores_resina": 14
+    },
+    "Potrero": {
+      "aceite_ml": 0,
+      "productores_aceite": 0,
+      "resina_ml": 595,
+      "productores_resina": 7
+    }
   }
 }

@@ -1,13 +1,23 @@
 # Copaifera: paisaje y sistemas ganaderos
 ## Fragmentación, efecto de borde y resultados productivos
 
-Versión **4.2.1 (datos actualizados; diseño 4.1)**, basada en la versión 4 funcional. Aplicación de consulta con fondo claro y títulos verdes.
+Versión **4.2.2 (totales y detalle de producción; diseño 4.1)**, basada en la versión 4 funcional. Aplicación de consulta con fondo claro y títulos verdes.
 
 **Cambio v4:** en pantallas móviles, todos los gráficos de barras, líneas y otros gráficos cartesianos quedan estáticos para evitar zoom o desplazamiento accidental al tocar con uno o dos dedos. Los gráficos de torta conservan su interacción. La versión de escritorio mantiene el comportamiento anterior.
 
 **La edición 4.1 mantiene esa protección móvil.**
 La presentación de la versión 4.1 se conserva. Los datos actualizados se describen a continuación.
 
+
+## Totales y productores por muestreo · 16 de octubre de 2026
+
+- Las dos curvas de aceite y resina muestran ahora la **suma en mL por ambiente y muestreo**. Se conservan los colores de Bosque y Potrero. La comparación corresponde a 30 árboles en Bosque y 15 en Potrero.
+- Debajo de las tortas se añade una gráfica horizontal con **una barra por árbol productor** del muestreo seleccionado. El selector Producto permite alternar entre aceite y resina.
+- La nueva gráfica, su tabla y su descarga usan el mismo muestreo que las tortas; la elección de un árbol individual no modifica este resumen.
+- Solo se incluyen volúmenes mayores que cero del producto elegido. Si un árbol produjo aceite y resina, aparece en el detalle de cada producto con su volumen correspondiente.
+- Los resúmenes de Bosque y Potrero indican el número de productores y su volumen conjunto. Los períodos sin productores no generan barras ficticias.
+- Ejemplo verificado: muestreo 1, aceite, 9 productores en Bosque con 950 mL en total; Potrero, 0 productores y 0 mL.
+- Se conservan todos los datos, las fichas, las pruebas estadísticas y el clima provisional de la actualización anterior. Los archivos de estilos, fuentes, mapas y animaciones son idénticos.
 
 ## Actualización de datos · 16 de octubre de 2026
 

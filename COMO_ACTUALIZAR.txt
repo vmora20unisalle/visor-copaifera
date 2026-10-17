@@ -7,3 +7,5 @@ ACTUALIZACIÓN DE DATOS DEL VISOR
 
 Se conserva el encabezado más reciente y la presentación. El visor incluye nueve muestreos; el clima sigue provisional.
 El detalle de la corrección por etiqueta de las desviaciones NDVI está en data/revision_ndvi_desviacion.csv.
+
+NUEVO: las curvas muestran totales por muestreo. Debajo de las tortas, el detalle por árbol productor cambia con el mismo muestreo y permite elegir aceite o resina.

@@ -68,6 +68,8 @@ function initProductionDistribution(){
   return `<option value="${m}">Muestreo ${m} · ${date(row.FECHA)}</option>`;
  }).join('');
  $('distribution-sample').onchange=renderProductionDistribution;
+ $('producer-product').onchange=renderProducerVolumes;
+ $('download-producers').onclick=()=>download(productionProducers($('distribution-sample').value,$('producer-product').value),'productores_'+$('producer-product').value.toLowerCase()+'_muestreo_'+$('distribution-sample').value);
  $('download-distribution').onclick=()=>download(['Bosque','Potrero'].flatMap(e=>productionDistribution($('distribution-sample').value,e)),'individuos_por_produccion_muestreo_'+$('distribution-sample').value);
  renderProductionDistribution();
 }
@@ -88,9 +90,40 @@ function renderProductionDistribution(){
    annotations:[{x:.5,y:.5,xref:'paper',yref:'paper',showarrow:false,text:`<b>${n}</b><br>árboles`,font:{size:19,color:G}}]});
   $('legend-dist-'+suffix).innerHTML=rows.map(r=>`<div class="distribution-line"><span><i class="legend-dot" style="background:${colors[r.TIPO_PRODUCCION]}"></i>${esc(r.TIPO_PRODUCCION)}</span><strong>${r.N_INDIVIDUOS}<small> ${num(r.PORCENTAJE,1)} %</small></strong></div>`).join('');
  }
+ renderProducerVolumes();
  height();
 }
-function renderGeneralProduction(){const samples=[...new Set(D.produccion.map(r=>Number(r.MUESTREO)))].sort((a,b)=>a-b);for(const [key,id,name] of [['ACEITE_ML','chart-avg-aceite','Aceite'],['RESINA_ML','chart-avg-resina','Resina']])plot(id,['Bosque','Potrero'].map(env=>({type:'scatter',mode:'lines+markers',name:env,x:samples,y:samples.map(m=>avg(D.produccion.filter(r=>r.MUESTREO===m&&r.AMBIENTE===env).map(r=>productionValue(r,key)))),line:{color:environmentColors[env],width:2.5},marker:{size:7},hovertemplate:env+'<br>Muestreo %{x}<br>%{y:.2f} mL/árbol<extra></extra>'})),{xaxis:{title:{text:'Muestreo'},dtick:1},yaxis:{title:{text:name+' (mL/árbol)'},gridcolor:'#edf2e9',rangemode:'tozero'}})}
+function productionTotal(muestreo,ambiente,field){
+ const values=D.produccion.filter(r=>Number(r.MUESTREO)===Number(muestreo)&&r.AMBIENTE===ambiente).map(r=>productionValue(r,field));
+ return values.length&&values.every(v=>v!==null)?values.reduce((a,b)=>a+b,0):null;
+}
+function productionProducers(muestreo,field){
+ const product=field==='ACEITE_ML'?'Aceite':'Resina';
+ return D.produccion.filter(r=>Number(r.MUESTREO)===Number(muestreo)&&productionValue(r,field)>0)
+  .map(r=>({MUESTREO:Number(r.MUESTREO),FECHA:r.FECHA,ID_ARBOL:r.ID_ARBOL,AMBIENTE:r.AMBIENTE,PRODUCTO:product,VOLUMEN_ML:productionValue(r,field),TIPO_PRODUCCION:classifyProduction(r)}))
+  .sort((a,b)=>a.ID_ARBOL.localeCompare(b.ID_ARBOL,'es',{numeric:true}));
+}
+function renderProducerVolumes(){
+ const m=Number($('distribution-sample').value||1),field=$('producer-product').value||'ACEITE_ML';
+ const product=field==='ACEITE_ML'?'Aceite':'Resina',rows=productionProducers(m,field);
+ const sampleDate=D.produccion.find(r=>Number(r.MUESTREO)===m)?.FECHA;
+ $('producer-sample-label').textContent='Muestreo '+m+' · '+date(sampleDate);
+ $('producer-volume-summary').textContent=['Bosque','Potrero'].map(env=>{const group=rows.filter(r=>r.AMBIENTE===env);return env+': '+group.length+' '+(group.length===1?'árbol productor':'árboles productores')+' · '+num(group.reduce((sum,r)=>sum+r.VOLUMEN_ML,0),1)+' mL de '+product.toLowerCase()}).join('. ')+'.';
+ $('chart-producer-volume').style.height=Math.max(320,rows.length*26+110)+'px';
+ plot('chart-producer-volume',['Bosque','Potrero'].map(env=>{
+  const group=rows.filter(r=>r.AMBIENTE===env);
+  return {type:'bar',orientation:'h',name:env,x:group.map(r=>r.VOLUMEN_ML),y:group.map(r=>r.ID_ARBOL),
+   marker:{color:environmentColors[env]},text:group.map(r=>num(r.VOLUMEN_ML,1)+' mL'),textposition:'outside',cliponaxis:false,
+   hovertemplate:'%{y}<br>'+env+' · Muestreo '+m+'<br>'+product+': %{x:.1f} mL<extra></extra>'};
+ }),{barmode:'stack',margin:{l:105,r:60,t:20,b:75},
+  xaxis:{title:{text:product+' (mL)'},gridcolor:'#edf2e9',rangemode:'tozero',range:[0,Math.max(1,...rows.map(r=>r.VOLUMEN_ML))*1.18]},
+  yaxis:{type:'category',categoryorder:'array',categoryarray:rows.map(r=>r.ID_ARBOL),autorange:'reversed',automargin:true,tickfont:{size:11}},
+  annotations:rows.length?[]:[{xref:'paper',yref:'paper',x:.5,y:.5,showarrow:false,text:'Sin árboles productores de '+product.toLowerCase()+' en este muestreo.',font:{size:12,color:G}}]
+ });
+ table('table-producers',rows.map(r=>({...r,FECHA:date(r.FECHA)})),[['ID_ARBOL','Árbol'],['AMBIENTE','Ambiente'],['FECHA','Fecha'],['PRODUCTO','Producto'],['VOLUMEN_ML','Volumen (mL)']]);
+ height();
+}
+function renderGeneralProduction(){const samples=[...new Set(D.produccion.map(r=>Number(r.MUESTREO)))].sort((a,b)=>a-b);for(const [key,id,name] of [['ACEITE_ML','chart-avg-aceite','Aceite'],['RESINA_ML','chart-avg-resina','Resina']])plot(id,['Bosque','Potrero'].map(env=>({type:'scatter',mode:'lines+markers',name:env,x:samples,y:samples.map(m=>productionTotal(m,env,key)),line:{color:environmentColors[env],width:2.5},marker:{size:7},hovertemplate:env+'<br>Muestreo %{x}<br>Total de '+name.toLowerCase()+': %{y:.1f} mL<extra></extra>'})),{xaxis:{title:{text:'Muestreo'},dtick:1},yaxis:{title:{text:name+' total (mL)'},gridcolor:'#edf2e9',rangemode:'tozero'}})}
 function patterns(){maps.patterns=new ConsultaMapa('map-patterns',{label:'Mapa de patrones emergentes NDVI',base:'none',layers:[D.maps.assets.patrones_ndvi],outlines:[{geo:D.zona_estudio,color:'#28583d',width:1.8}]});legend('legend-patterns',D.maps.pattern_colors,D.maps.pattern_names);renderPatterns();table('table-patterns',D.patrones_resumen.map(r=>({...r,Patron:D.maps.pattern_names[r.PATTERN]||r.PATTERN})),[['Patron','Patrón'],['AREA_HA','Área (ha)'],['PORCENTAJE','Superficie (%)']])}
 function renderPatterns(){
  const order=Object.keys(D.maps.pattern_colors);
@@ -135,6 +168,6 @@ function renderMicroclimate(){const key=$('climate-var').value;const titles={'TE
 function renderForage(){const periods=[...new Set(D.aforos_forraje.map(r=>r.PERIODO))].sort();plot('chart-forage',['abierto','arbol'].map((t,i)=>{const rows=D.aforos_forraje.filter(r=>r.TRATAMIENTO===t).sort((a,b)=>a.PERIODO.localeCompare(b.PERIODO));return {type:'scatter',mode:'lines+markers',name:i?'Bajo árbol':'Abierto',x:rows.map(r=>r.PERIODO),y:rows.map(r=>r.MEDIA_G_M2),line:{color:i?G:O,width:2.5},marker:{size:7},hovertemplate:'%{x|%m/%Y}<br>%{y:.1f} g/m²<extra></extra>'}}),{xaxis:{type:'date',tickmode:'array',tickvals:periods,ticktext:periods.map(p=>months[Number(p.slice(5,7))-1]+' '+p.slice(0,4)),tickangle:window.innerWidth<620?-45:0,title:{text:'Mes y año observados'}},yaxis:{title:{text:'Aforo (g/m²)'},gridcolor:'#edf2e9',rangemode:'tozero'}})}
 function renderQuality(){const key=$('brom-var').value;const unit=bromVars[key].match(/\((.*?)\)/)?.[1]||'';plot('chart-quality',[{type:'bar',x:['Copaiba','Humidicola<br>sombra','Humidicola<br>pleno sol'],y:D.calidad_forraje.map(r=>r[key]),marker:{color:[G,'#71965d','#cca052']},text:D.calidad_forraje.map(r=>num(r[key],2)),textposition:'outside',cliponaxis:false,hovertemplate:'%{x}<br>%{y:.2f} '+unit+'<extra></extra>'}],{showlegend:false,margin:{l:48,r:18,t:22,b:65},yaxis:{title:{text:unit},gridcolor:'#edf2e9',rangemode:'tozero'},xaxis:{tickfont:{size:11}}})}
 function tab(name){activeTab=name;document.querySelectorAll('[role=tabpanel]').forEach(el=>el.hidden=el.id!==name);document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===name?'true':'false'));if(!init.has(name)){({paisaje:landscape,arboles:trees,ndvi:patterns,clima:climate}[name])();init.add(name)}requestAnimationFrame(()=>{for(const m of Object.values(maps))m.resize();for(const id of charts)if($(id).offsetParent!==null)Plotly.Plots.resize($(id));height()})}
-function boot(){if(!D||!window.Plotly)throw new Error('No se cargaron datos.js o vendor/plotly.min.js. Sube la carpeta visor_web completa.');$('kpis').innerHTML=[[D.arboles.length,'Árboles<br>monitoreados'],[new Set(D.produccion.map(r=>r.MUESTREO)).size,'Muestreos<br>productivos'],[new Set(D.ndvi_copa_tiempo.map(r=>r.FECHA)).size,'Fechas históricas<br>de NDVI'],[D.ambientes_clima.length,'Referencias<br>climáticas']].map(([n,t])=>`<div class="kpi"><strong>${n}</strong><span>${t}</span></div>`).join('');document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));document.querySelectorAll('[data-download]').forEach(b=>b.onclick=()=>download(D[b.dataset.download],b.dataset.download));document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',height));tab('paisaje');window.visor={maps,setTab:tab,setTree:selectTree,setClimate:selectRef,data:D,get selectedTree(){return selectedTree},get selectedRef(){return selectedRef},productionDistribution};new ResizeObserver(height).observe($('app'));let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{({paisaje:renderLandscape,arboles:()=>{renderTreeProduction();renderGeneralProduction();renderProductionDistribution()},ndvi:renderPatterns,clima:()=>{renderClimogram();renderMicroclimate();renderForage();renderQuality()}}[activeTab])();height()},180)});send('streamlit:componentReady',{apiVersion:1});height()}
+function boot(){if(!D||!window.Plotly)throw new Error('No se cargaron datos.js o vendor/plotly.min.js. Sube la carpeta visor_web completa.');$('kpis').innerHTML=[[D.arboles.length,'Árboles<br>monitoreados'],[new Set(D.produccion.map(r=>r.MUESTREO)).size,'Muestreos<br>productivos'],[new Set(D.ndvi_copa_tiempo.map(r=>r.FECHA)).size,'Fechas históricas<br>de NDVI'],[D.ambientes_clima.length,'Referencias<br>climáticas']].map(([n,t])=>`<div class="kpi"><strong>${n}</strong><span>${t}</span></div>`).join('');document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));document.querySelectorAll('[data-download]').forEach(b=>b.onclick=()=>download(D[b.dataset.download],b.dataset.download));document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',height));tab('paisaje');window.visor={maps,setTab:tab,setTree:selectTree,setClimate:selectRef,data:D,get selectedTree(){return selectedTree},get selectedRef(){return selectedRef},productionDistribution,productionTotal,productionProducers};new ResizeObserver(height).observe($('app'));let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{({paisaje:renderLandscape,arboles:()=>{renderTreeProduction();renderGeneralProduction();renderProductionDistribution()},ndvi:renderPatterns,clima:()=>{renderClimogram();renderMicroclimate();renderForage();renderQuality()}}[activeTab])();height()},180)});send('streamlit:componentReady',{apiVersion:1});height()}
 try{boot()}catch(e){$('app').insertAdjacentHTML('afterbegin',`<div class="error-box"><b>No pudo iniciarse el visor.</b><br>${esc(e.message)}</div>`);console.error(e);send('streamlit:componentReady',{apiVersion:1});height()}
 })();
